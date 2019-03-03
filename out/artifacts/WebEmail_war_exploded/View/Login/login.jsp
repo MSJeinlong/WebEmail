@@ -18,7 +18,7 @@
     <div class="lowin-wrapper">
         <div class="lowin-box lowin-login">
             <div class="lowin-box-inner">
-                <form name="form" action="" method="post" onsubmit="return checkSignIn()">
+                <form name="form" action="/index.jsp" method="post" onsubmit="return checkSignIn()">
                     <p>Sign in to continue</p>
                     <div class="lowin-group">
                         <label>UserName <a href="#" class="login-back-link">Sign in?</a></label>
