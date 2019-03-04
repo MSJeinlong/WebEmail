@@ -24,6 +24,12 @@ public class User {
 		this.password = password;
 	}
 
+	public User(String userName, String password, String phone){
+		this.userName = userName;
+		this.password = password;
+		this.phone = phone;
+	}
+
 	public String getUserName() {
 		return userName;
 	}

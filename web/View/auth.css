@@ -1,11 +1,11 @@
 body {
 	margin: 0;
-	background-image:url('backgroundImage.jpg');
-	background-repeat:no-repeat;
-    background-attachment:fixed;
-    background-position:center;
-	/* background-color: #fbfbfb; */
+	background-image: url('/View/backgroundImage.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
 	text-align: center;
+	color: azure;
 }
 
 .lowin {
@@ -308,8 +308,8 @@ body {
 /* keyframes */
 @-webkit-keyframes LowinAnimated {
 	0% {
-		-webkit-transform: rotate3d(0, 0, 0, 0deg);
-		        transform: rotate3d(0, 0, 0, 0deg);
+		-webkit-transform: rotate3d(0);
+		        transform: rotate3d(0);
 	}
 	99% {
 		opacity: 1;
@@ -322,8 +322,8 @@ body {
 }
 @keyframes LowinAnimated {
 	0% {
-		-webkit-transform: rotate3d(0, 0, 0, 0deg);
-		        transform: rotate3d(0, 0, 0, 0deg);
+		-webkit-transform: rotate3d(0);
+		        transform: rotate3d(0);
 	}
 	99% {
 		opacity: 1;
@@ -346,8 +346,8 @@ body {
 	}
 	100% {
 		opacity: 1;
-		-webkit-transform: rotate3d(0, 0, 0, 0deg);
-		        transform: rotate3d(0, 0, 0, 0deg);
+		-webkit-transform: rotate3d(0);
+		        transform: rotate3d(0);
 	}
 }
 
@@ -362,8 +362,8 @@ body {
 	}
 	100% {
 		opacity: 1;
-		-webkit-transform: rotate3d(0, 0, 0, 0deg);
-		        transform: rotate3d(0, 0, 0, 0deg);
+		-webkit-transform: rotate3d(0);
+		        transform: rotate3d(0);
 	}
 }
 

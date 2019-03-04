@@ -13,6 +13,7 @@ public class DBConnection {
             Class.forName(driverName);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
+            System.out.println("JDBC驱动程序加载出错");
         }
     }
 

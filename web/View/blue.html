@@ -3,28 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Login</title>
+	<title>Lowin</title>
 	<link rel="stylesheet" href="auth.css">
-	<script type="text/javascript">
-	/**
-	 * 检查登录用户的输入是否合法
-	 */
-	function checkSignIn() {
-		var userName = form.userName.value;
-		var password = form.passsword.value;
-		alert(userName + ":" + password);
-		var pattern = /[`~!@#$%^&*()_+<>?:"{},.\/;'[\]]/im;
-		if (userName == "" || password == "") {
-			alert("用户名或密码不能为空！");
-			return false;
-		} // 检查userName或password是否有特殊密码
-		else if (pattern.test(userName) || pattern.test(password)) {
-			alert("用户名或密码只能由字母和数字组成！")
-			return false;
-		}
-		return true;
-	}
-	</script>
 </head>
 
 <body>
@@ -35,21 +15,20 @@
 		<div class="lowin-wrapper">
 			<div class="lowin-box lowin-login">
 				<div class="lowin-box-inner">
-					<form name="form" action="" method="post" onsubmit="return checkSignIn()">
+					<form action="index.html">
 						<p>Sign in to continue</p>
 						<div class="lowin-group">
 							<label>Email <a href="#" class="login-back-link">Sign in?</a></label>
-							<input type="email" autocomplete="email" name="userName" class="lowin-input">
+							<input type="email" autocomplete="email" name="email" class="lowin-input">
 						</div>
 						<div class="lowin-group password-group">
 							<label>Password <a href="#" class="forgot-link">Forgot Password?</a></label>
 							<input type="password" name="password" autocomplete="current-password" class="lowin-input">
 						</div>
-						<!-- <button class="lowin-btn login-btn">
+						<button class="lowin-btn login-btn">
 							Sign In
 						</button>
- -->
- 						<input type="submit" value="Sign In" class="lowin-btn login-btn">
+
 						<div class="text-foot">
 							Don't have an account? <a href="" class="register-link">Register</a>
 						</div>
@@ -59,7 +38,7 @@
 
 			<div class="lowin-box lowin-register">
 				<div class="lowin-box-inner">
-					<form>
+					<form action="blue.html">
 						<p>Let's create your account</p>
 						<div class="lowin-group">
 							<label>Name</label>

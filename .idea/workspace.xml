@@ -5,20 +5,60 @@
       <artifact name="WebEmail:war exploded" />
     </artifacts-to-build>
   </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/Model/UserDAOImpl.java" line="17" />
+    <bookmark url="file://$PROJECT_DIR$/src/Controller/Test.java" line="9" />
+    <bookmark url="file://$PROJECT_DIR$/src/Controller/Test.java" line="10" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c8064642-f906-4153-adf4-1103ba9b1d03" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/View/UserEmail/EmailPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/EncodeFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/GetAuthCodeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/LoginCheckFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/RegisterServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tools/AuthCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Test/email1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Test/reflash.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/View/Emails.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/View/auth.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/View/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/View/backgroundImage.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/View/blue.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/View/check.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/View/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/View/kodinger.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/View/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/View/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/View/login_bk.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/index2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/activation.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/mail.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-8.0.13.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/View/Login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/View/Login/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Controller/LoginCheckServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmail.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WebEmail.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/View/Login/auth.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/View/Login/auth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/View/Login/backgroundImage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/View/Login/blue.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/View/Login/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/View/Login/kodinger.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/View/Login/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/View/Login/loginCheck.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WebEmail/Controller/LoginCheckServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WebEmail/Model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WebEmail/Model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/LoginCheckServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Model/UserDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Model/UserDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Tools/DBConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Tools/DBConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebEmail/Model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebEmail/Model/UserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebEmail/Model/UserDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebEmail/Tools/DBConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LoginServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/View/Login/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/View/Login/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/View/Login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/View/Login/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/UserDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tools/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tools/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,29 +75,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/View/login.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/Test/reflash.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/View/Login/login.jsp">
+        <entry file="file://$PROJECT_DIR$/web/Test/email1.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-774">
-              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+            <state relative-caret-position="255">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/View/Login/index.jsp">
+        <entry file="file://$PROJECT_DIR$/src/Controller/LoginServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+            <state relative-caret-position="357">
+              <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -67,11 +116,19 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
+        <option value="Class" />
+        <option value="JavaScript File" />
         <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="MSJeinlong &lt;37068767+msjeinlong@users.noreply.github.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -82,14 +139,33 @@
         <option value="$PROJECT_DIR$/web/View/Login/auth.css" />
         <option value="$PROJECT_DIR$/web/View/Login/auth.js" />
         <option value="$PROJECT_DIR$/web/View/Login/loginCheck.js" />
-        <option value="$PROJECT_DIR$/src/Tools/DBConnection.java" />
-        <option value="$PROJECT_DIR$/src/Model/UserDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/Model/User.java" />
         <option value="$PROJECT_DIR$/web/View/UserEmail/EmailPage.jsp" />
         <option value="$PROJECT_DIR$/src/Controller/LoginCheckServlet.java" />
-        <option value="$PROJECT_DIR$/src/Controller/LoginServlet.java" />
         <option value="$PROJECT_DIR$/web/View/Login/index.jsp" />
         <option value="$PROJECT_DIR$/web/View/Login/login.jsp" />
+        <option value="$PROJECT_DIR$/web/CSS/login.css" />
+        <option value="$PROJECT_DIR$/web/View/Emails.jsp" />
+        <option value="$PROJECT_DIR$/web/login.jsp" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/src/Model/UserDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/Tools/DBConnection.java" />
+        <option value="$PROJECT_DIR$/src/Controller/EncodeFilter.java" />
+        <option value="$PROJECT_DIR$/src/Controller/LoginCheckFilter.java" />
+        <option value="$PROJECT_DIR$/src/Tools/AuthCode.java" />
+        <option value="$PROJECT_DIR$/src/Controller/GetAuthCodeServlet.java" />
+        <option value="$PROJECT_DIR$/web/View/login.css" />
+        <option value="$PROJECT_DIR$/web/View/blue.html" />
+        <option value="$PROJECT_DIR$/web/View/index.html" />
+        <option value="$PROJECT_DIR$/src/Model/User.java" />
+        <option value="$PROJECT_DIR$/src/Controller/Test.java" />
+        <option value="$PROJECT_DIR$/src/Controller/RegisterServlet.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/index2.jsp" />
+        <option value="$PROJECT_DIR$/web/View/auth.css" />
+        <option value="$PROJECT_DIR$/web/View/login.jsp" />
+        <option value="$PROJECT_DIR$/web/View/check.js" />
+        <option value="$PROJECT_DIR$/src/Controller/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/web/Test/reflash.jsp" />
+        <option value="$PROJECT_DIR$/web/Test/email1.jsp" />
       </list>
     </option>
   </component>
@@ -101,11 +177,13 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
+    <option name="x" value="1270" />
     <option name="width" value="1302" />
     <option name="height" value="1372" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -121,13 +199,7 @@
             <path>
               <item name="WebEmail" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebEmail" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebEmail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebEmail" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="mysql-connector" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebEmail" type="b2602c69:ProjectViewProjectNode" />
@@ -138,14 +210,14 @@
               <item name="WebEmail" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebEmail" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebEmail" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebEmail" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="Login" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -158,21 +230,23 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551593473954" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../IdeaProjects/JavaWeb" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551705316691" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/mail.jar!/" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Study\IntelliJ IDEA\WebEmail\mysql-connector" />
-      <recent name="F:\Study\IntelliJ IDEA\WebEmail\web\View\Login" />
+      <recent name="F:\Study\IntelliJ IDEA\WebEmail\web\WEB-INF\lib" />
+      <recent name="F:\Study\IntelliJ IDEA\WebEmail\web\View" />
+      <recent name="F:\Study\IntelliJ IDEA\WebEmail\src\Controller" />
+      <recent name="F:\Study\IntelliJ IDEA\WebEmail\src\Tools" />
       <recent name="F:\Study\IntelliJ IDEA\WebEmail\web" />
-      <recent name="F:\Study\IntelliJ IDEA\WebEmail\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -188,6 +262,19 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.14">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Controller.Test" />
+      <module name="WebEmail" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserDAOImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Model.UserDAOImpl" />
       <module name="WebEmail" />
@@ -208,11 +295,10 @@
       <method v="2" />
     </configuration>
     <configuration name="Tomcat 9.0.14" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.14" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
       <deployment>
         <artifact name="WebEmail:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/WebEmail_war_exploded" />
+            <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
@@ -318,60 +404,21 @@
         </option>
       </method>
     </configuration>
-    <configuration name="login.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.14" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/View/Login/login.jsp" />
-      <deployment>
-        <artifact name="WebEmail:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/WebEmail_war_exploded" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="login_jsp_WebEmail" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="WebEmail:war exploded" />
-        </option>
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.UserDAOImpl" />
+      <item itemvalue="Application.Test" />
       <item itemvalue="JavaScript Debug.login2.jsp" />
       <item itemvalue="JavaScript Debug.login.jsp" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.14" />
-      <item itemvalue="Tomcat Server.login.jsp" />
       <item itemvalue="Tomcat Server.login.jsp (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.UserDAOImpl" />
         <item itemvalue="JavaScript Debug.login.jsp" />
         <item itemvalue="Tomcat Server.login.jsp (1)" />
         <item itemvalue="JavaScript Debug.login2.jsp" />
-        <item itemvalue="Tomcat Server.login.jsp" />
       </list>
     </recent_temporary>
   </component>
@@ -391,28 +438,40 @@
       <workItem from="1551529337327" duration="4428000" />
       <workItem from="1551533956073" duration="5767000" />
       <workItem from="1551543337950" duration="551000" />
-      <workItem from="1551585549151" duration="2537000" />
+      <workItem from="1551585549151" duration="12902000" />
+      <workItem from="1551604828987" duration="5972000" />
+      <workItem from="1551622391254" duration="1851000" />
+      <workItem from="1551624394487" duration="2703000" />
+      <workItem from="1551703172537" duration="1735000" />
     </task>
+    <task id="LOCAL-00001" summary="delete Login folder, write the code by myself">
+      <created>1551593572532</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1551593572532</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17627000" />
+    <option name="totallyTimeSpent" value="40253000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49723756" visible="true" weight="0.27125505" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4962963" weight="0.25910932" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" sideWeight="0.50276244" side_tool="true" weight="0.20728745" />
+      <window_info id="Web" order="7" sideWeight="0.5037037" side_tool="true" weight="0.25506073" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32962963" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32962963" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49878544" weight="0.33333334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -420,12 +479,12 @@
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32894737" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32894737" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.33333334" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50121456" side_tool="true" weight="0.30185184" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.6388664" weight="0.33333334" />
       <window_info anchor="bottom" id="Problems" order="12" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info anchor="bottom" id="Version Control" order="15" weight="0.32962963" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -436,54 +495,142 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4962963" visible="true" weight="0.25910932" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" sideWeight="0.5037037" side_tool="true" weight="0.25506073" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32962963" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49878544" visible="true" weight="0.33333334" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32894737" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32894737" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50121456" side_tool="true" weight="0.30185184" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.6388664" weight="0.33333334" />
+      <window_info anchor="bottom" id="Problems" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="15" weight="0.32962963" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="delete Login folder, write the code by myself" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete Login folder, write the code by myself" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Controller/RegisterServlet.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/web/View/Login/login2.jsp" />
-    <entry file="file://$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/View/Login/auth.js">
+    <entry file="file://$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/View/Login/auth.js" />
+    <entry file="file://$PROJECT_DIR$/web/View/Login/auth.js" />
+    <entry file="file://$PROJECT_DIR$/web/View/Login/blue.html" />
+    <entry file="file://$PROJECT_DIR$/web/View/Login/loginCheck.js" />
+    <entry file="file://$PROJECT_DIR$/web/View/Login/auth.css" />
+    <entry file="file://$PROJECT_DIR$/web/View/UserEmail/EmailPage.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/View/Login/index.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/View/Login/login.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/CSS/login.css" />
+    <entry file="file://$PROJECT_DIR$/web/login.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/View/Emails.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="133" column="11" lean-forward="true" selection-start-line="133" selection-start-column="11" selection-end-line="133" selection-end-column="11" />
+        <state relative-caret-position="93">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/View/Login/auth.js">
+    <entry file="file://$PROJECT_DIR$/src/Tools/DBConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        <state relative-caret-position="153">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/View/Login/blue.html">
+    <entry file="file://$PROJECT_DIR$/src/Controller/EncodeFilter.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tools/AuthCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="77" column="33" selection-start-line="75" selection-start-column="24" selection-end-line="77" selection-end-column="33" />
+        <state relative-caret-position="1394">
+          <caret line="87" column="36" selection-start-line="87" selection-start-column="36" selection-end-line="87" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/View/Login/loginCheck.js">
+    <entry file="file://$PROJECT_DIR$/src/Controller/GetAuthCodeServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        <state relative-caret-position="136">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/View/Login/auth.css">
+    <entry file="file://$PROJECT_DIR$/web/View/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6222">
-          <caret line="366" column="5" selection-start-line="366" selection-start-column="5" selection-end-line="366" selection-end-column="5" />
+        <state relative-caret-position="186">
+          <caret line="16" column="45" lean-forward="true" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/View/blue.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="79" selection-start-line="1" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/View/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+        <state relative-caret-position="289">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding>
-            <element signature="e#485#486#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
             <element signature="e#552#553#0" expanded="true" />
             <element signature="e#583#584#0" expanded="true" />
             <element signature="e#615#616#0" expanded="true" />
@@ -506,17 +653,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/UserDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/Controller/LoginCheckFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="52" column="44" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/View/login_bk.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/View/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/View/auth.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/RegisterServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/View/check.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/UserDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        <state relative-caret-position="595">
+          <caret line="37" column="48" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1909#1910#0" expanded="true" />
@@ -525,52 +727,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/View/UserEmail/EmailPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tools/DBConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+        <state relative-caret-position="221">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/index2.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        <state relative-caret-position="119">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/View/Login/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/Controller/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        <state relative-caret-position="357">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/View/Login/login.jsp">
+    <entry file="file://$PROJECT_DIR$/web/View/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-774">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        <state relative-caret-position="102">
+          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Test/reflash.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Test/email1.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>

@@ -61,7 +61,7 @@ var Auth = {
 		Auth.vars.login_btn.innerText = 'Forgot Password';
 
 		Auth.setHeight(Auth.vars.lowin_wrapper_height - Auth.vars.password_group_height);
-		Auth.vars.lowin_login.querySelector('form').setAttribute('action', Auth.vars.option.forgot_url);
+		//Auth.vars.lowin_login.querySelector('form').setAttribute('action', Auth.vars.option.forgot_url);
 
 		e.preventDefault();
 	},
@@ -82,7 +82,7 @@ var Auth = {
 		}, 1000);
 
 		Auth.vars.login_btn.innerText = 'Sign In';
-		Auth.vars.lowin_login.querySelector('form').setAttribute('action', Auth.vars.option.login_url);
+		//Auth.vars.lowin_login.querySelector('form').setAttribute('action', Auth.vars.option.login_url);
 
 		Auth.setHeight(Auth.vars.lowin_wrapper_height);
 		
@@ -105,7 +105,7 @@ var Auth = {
 		Auth.vars.lowin_wrapper_height = Auth.vars.lowin_wrapper.offsetHeight;
 
 		Auth.vars.option = option;
-		Auth.vars.lowin_login.querySelector('form').setAttribute('action', option.login_url);
+		//Auth.vars.lowin_login.querySelector('form').setAttribute('action', option.login_url);
 
 		var len = Auth.vars.box.length - 1;
 

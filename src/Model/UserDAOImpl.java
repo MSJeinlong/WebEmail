@@ -14,7 +14,7 @@ public class UserDAOImpl implements UserDAO {
     public static void main(String[] args) {
         UserDAO userDAO = new UserDAOImpl();
         User u = new User();
-        u.setUserName("mIKE");
+        u.setUserName("Bill");
         u.setPassword("123456");
         u.setPhone("121314917957");
         System.out.println(userDAO.query(u));
