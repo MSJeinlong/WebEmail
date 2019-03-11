@@ -2,10 +2,10 @@
   Created by IntelliJ IDEA.
   User: Think
   Date: 3/4/2019
-  Time: 9:07 PM
+  Time: 9:24 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.io.*,java.util.*,javax.mail.*"%>
 <%@ page import="javax.mail.internet.*,javax.activation.*"%>
 <%@ page import="javax.servlet.http.*,javax.servlet.*" %>
@@ -39,8 +39,10 @@
                 new InternetAddress(to));
         // 设置 Subject: header字段
         message.setSubject("This is the Subject Line!");
-        // 现在设置的实际消息
-        message.setText("This is actual message");
+
+        // 设置 HTML消息
+        message.setContent("<h1>This is actual message</h1>",
+                "text/html" );
         // 发送消息
         Transport.send(message);
         result = "Sent message successfully....";
@@ -51,7 +53,7 @@
 %>
 <html>
 <head>
-    <title>Send Email using JSP</title>
+    <title>Send HTML Email using JSP</title>
 </head>
 <body>
 <center>

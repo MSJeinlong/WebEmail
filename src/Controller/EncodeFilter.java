@@ -8,46 +8,46 @@ import java.io.IOException;
  * Servlet Filter implementation class EncodeFilter
  */
 @WebFilter(dispatcherTypes = {
-				DispatcherType.REQUEST, 
-				DispatcherType.FORWARD, 
-				DispatcherType.INCLUDE, 
-				DispatcherType.ERROR
-		}
-					, urlPatterns = { "/*" })
+        DispatcherType.REQUEST,
+        DispatcherType.FORWARD,
+        DispatcherType.INCLUDE,
+        DispatcherType.ERROR
+}
+        , urlPatterns = {"/*"})
 public class EncodeFilter implements Filter {
 
     /**
-     * Default constructor. 
+     * Default constructor.
      */
     public EncodeFilter() {
         // TODO Auto-generated constructor stub
     }
 
-	/**
-	 * @see Filter#destroy()
-	 */
-	public void destroy() {
-		// TODO Auto-generated method stub
-	}
+    /**
+     * @see Filter#destroy()
+     */
+    public void destroy() {
+        // TODO Auto-generated method stub
+    }
 
-	/**
-	 * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)
-	 */
-	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-		// TODO Auto-generated method stub
-		// place your code here
-		 request.setCharacterEncoding("utf-8");
-	        response.setCharacterEncoding("utf-8");
-	        response.setContentType("text/html;charset=utf-8");
-		// pass the request along the filter chain
-		chain.doFilter(request, response);
-	}
+    /**
+     * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)
+     */
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+        // TODO Auto-generated method stub
+        // place your code here
+        request.setCharacterEncoding("utf-8");
+        response.setCharacterEncoding("utf-8");
+        response.setContentType("text/html;charset=utf-8");
+        // pass the request along the filter chain
+        chain.doFilter(request, response);
+    }
 
-	/**
-	 * @see Filter#init(FilterConfig)
-	 */
-	public void init(FilterConfig fConfig) throws ServletException {
-		// TODO Auto-generated method stub
-	}
+    /**
+     * @see Filter#init(FilterConfig)
+     */
+    public void init(FilterConfig fConfig) throws ServletException {
+        // TODO Auto-generated method stub
+    }
 
 }

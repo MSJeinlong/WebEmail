@@ -10,14 +10,14 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <title>Lowin</title>
-    <link rel="stylesheet" href="/View/auth.css">
-    <script type="text/javascript" src="/View/check.js"></script>
+    <link rel="stylesheet" href="/View/login/auth.css">
+    <script type="text/javascript" src="/View/login/check.js"></script>
 </head>
 
 <body>
 <div class="lowin lowin-blue">
     <div class="lowin-brand">
-        <img src="/View/kodinger.jpg" alt="logo">
+        <img src="/View/login/kodinger.jpg" alt="logo">
     </div>
     <div class="lowin-wrapper">
         <div class="lowin-box lowin-login">
@@ -90,7 +90,7 @@
     </footer>
 </div>
 
-<script src="/View/auth.js"></script>
+<script src="/View/login/auth.js"></script>
 <script>
     Auth.init({
         login_url: '#login',
