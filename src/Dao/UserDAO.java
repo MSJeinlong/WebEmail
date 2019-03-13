@@ -1,4 +1,6 @@
-package Model;
+package Dao;
+
+import bean.User;
 
 public interface UserDAO {
 	public boolean add(User u);

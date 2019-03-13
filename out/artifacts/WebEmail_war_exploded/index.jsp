@@ -8,9 +8,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Title</title>
+    <script type="text/javascript" src="/View/js/addAccount.js"></script>
 </head>
 <body>
-#test$;你好
+test;$你好<br />
 </body>
 </html>

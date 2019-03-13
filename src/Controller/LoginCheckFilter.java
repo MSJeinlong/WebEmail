@@ -15,7 +15,7 @@ import java.io.IOException;
 				DispatcherType.FORWARD, 
 				DispatcherType.INCLUDE
 		}
-					, urlPatterns = { "/View/Emails"})
+					, urlPatterns = { ""})
 public class LoginCheckFilter implements Filter {
 
     /**

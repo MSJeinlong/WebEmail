@@ -1,0 +1,21 @@
+body{
+    background-color: #EBEBEB;
+}
+/*li{*/
+/*float: left;*/
+/*}*/
+a{
+    text-decoration: none;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    background-color: #EBEBEB;
+    margin-bottom: 1px;
+    text-align: center;
+    color: black;
+}
+a:hover{
+    background-color: deepskyblue;
+    color: #FFFFFF;
+}

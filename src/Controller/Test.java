@@ -1,8 +1,8 @@
 package Controller;
 
-import Model.User;
-import Model.UserDAO;
-import Model.UserDAOImpl;
+import bean.User;
+import Dao.UserDAO;
+import Dao.UserDAOImpl;
 
 public class Test {
     public static void main(String[] args) {

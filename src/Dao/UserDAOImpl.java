@@ -1,5 +1,6 @@
-package Model;
+package Dao;
 
+import bean.User;
 import Tools.DBConnection;
 
 import java.sql.*;
