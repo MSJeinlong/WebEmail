@@ -1,11 +1,15 @@
 package bean;
 
+/**
+ * 这是用户-Email一一对应的class类
+ * 一个用户可以绑定多个Email
+ */
 public class Email {
-    private String username;
-    private String email;
-    private String password;
-    private String alias;
-    private String number;
+    private String username;     //用户名
+    private String email;       //用户对应的email
+    private String password;    //email对应的密码
+    private String alias;       //备注
+    private int number;         //该email所对应的收件箱的邮件数量
 
     public Email() {
     }
@@ -49,11 +53,22 @@ public class Email {
         this.alias = alias;
     }
 
-    public String getNumber() {
+    public int getNumber() {
         return number;
     }
 
-    public void setNumber(String number) {
+    public void setNumber(int number) {
         this.number = number;
+    }
+
+    @Override
+    public String toString() {
+        return "Email{" +
+                "username='" + username + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", alias='" + alias + '\'' +
+                ", number=" + number +
+                '}';
     }
 }

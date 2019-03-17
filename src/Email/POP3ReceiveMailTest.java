@@ -1,5 +1,7 @@
 package Email;
 
+import bean.ReceivedEmail;
+
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
@@ -7,7 +9,9 @@ import javax.mail.internet.MimeMultipart;
 import javax.mail.internet.MimeUtility;
 import java.io.*;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Properties;
 
 
@@ -21,9 +25,74 @@ import java.util.Properties;
 public class POP3ReceiveMailTest {
 
     private static int index = 1;
+    private static String port = "110";   // 端口号
+    private static String servicePath = "pop.sina.cn";   // 服务器地址
+    private static String user = "15917362227@sina.cn";     //账号
+    private static String password = "intel365";            //密码
 
     public static void main(String[] args) throws Exception {
         resceive();
+    }
+
+
+    public static List<ReceivedEmail> receivedEmails() {
+        List<ReceivedEmail> list = new ArrayList<>();
+
+        // 准备连接服务器的会话信息
+        Properties props = new Properties();
+        props.setProperty("mail.store.protocol", "pop3");       // 使用pop3协议
+        props.setProperty("mail.pop3.port", port);           // 端口
+        props.setProperty("mail.pop3.host", servicePath);       // pop3服务器
+
+        Session session = Session.getInstance(props);
+
+        Store store = null;
+        Folder folder = null;
+        try {
+            store = session.getStore("pop3");
+            store.connect(user, password); //163邮箱程序登录属于第三方登录所以这里的密码是163给的授权密码而并非普通的登录密码
+
+            // 获得收件箱
+            folder = store.getFolder("INBOX");
+            /* Folder.READ_ONLY：只读权限
+             * Folder.READ_WRITE：可读可写（可以修改邮件的状态）
+             */
+            folder.open(Folder.READ_WRITE); //打开收件箱
+
+            // 由于POP3协议无法获知邮件的状态,所以getUnreadMessageCount得到的是收件箱的邮件总数
+            System.out.println("未读邮件数: " + folder.getUnreadMessageCount());
+
+            // 由于POP3协议无法获知邮件的状态,所以下面得到的结果始终都是为0
+            System.out.println("删除邮件数: " + folder.getDeletedMessageCount());
+            System.out.println("新邮件: " + folder.getNewMessageCount());
+
+            // 获得收件箱中的邮件总数
+            System.out.println("邮件总数: " + folder.getMessageCount());
+
+            // 得到收件箱中的所有邮件,并解析
+            Message[] messages = folder.getMessages();
+            list = parseMessage(messages);
+
+            //得到收件箱中的所有邮件并且删除邮件
+            // deleteMessage(messages);
+
+
+        } catch (MessagingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            //释放资源
+            try {
+                if (folder != null)
+                    folder.close(true);
+                if (store != null)
+                    store.close();
+            } catch (MessagingException e) {
+                e.printStackTrace();
+            }
+        }
+        return list;
     }
 
     /**
@@ -34,10 +103,7 @@ public class POP3ReceiveMailTest {
          　　* 因为现在使用的是163邮箱 而163的 pop地址是　pop3.163.com　 端口是　110　　
          　　　　　* 比如使用好未来企业邮箱 就需要换成 好未来邮箱的 pop服务器地址 pop.163.net  和   端口 110
          　　 */
-        String port = "110";   // 端口号
-        String servicePath = "pop3.163.com";   // 服务器地址
-        String user = "15917362227@163.com";
-        String password = "En96387125";
+
 
         // 准备连接服务器的会话信息
         Properties props = new Properties();
@@ -84,7 +150,8 @@ public class POP3ReceiveMailTest {
      *
      * @param messages 要解析的邮件列表
      */
-    public static void parseMessage(Message... messages) throws MessagingException, IOException {
+    public static List<ReceivedEmail> parseMessage(Message... messages) throws MessagingException, IOException {
+        List<ReceivedEmail> list = new ArrayList<>();
         if (messages == null || messages.length < 1)
             throw new MessagingException("未找到要解析的邮件!");
 
@@ -95,23 +162,45 @@ public class POP3ReceiveMailTest {
             System.out.println("主题: " + getSubject(msg));
             System.out.println("发件人: " + getFrom(msg));
             System.out.println("收件人：" + getReceiveAddress(msg, null));
+            //System.out.println("抄送人："+MimeUtility.decodeText());
             System.out.println("发送时间：" + getSentDate(msg, null));
+            System.out.println("接收时间：" + getReceivedDate(msg, null));
             System.out.println("是否已读：" + isSeen(msg));
             System.out.println("邮件优先级：" + getPriority(msg));
             System.out.println("是否需要回执：" + isReplySign(msg));
-            System.out.println("邮件大小：" + msg.getSize() * 1024 + "kb");
+            System.out.println("邮件大小：" + msg.getSize() / 1024 + "kb");
             boolean isContainerAttachment = isContainAttachment(msg);
             System.out.println("是否包含附件：" + isContainerAttachment);
             if (isContainerAttachment) {
                 saveAttachment(msg, "F:\\Study\\EmailFile_Receives\\"); //保存附件
             }
-            StringBuffer content = new StringBuffer(30);
+            StringBuffer content = new StringBuffer();
             getMailTextContent(msg, content);
-            System.out.println("邮件正文：" + (content.length() > 100 ? content.substring(0, 100) + "..." : content));
+            System.out.println("邮件正文：" +content.toString());
+            //System.out.println("邮件正文：" + (content.length() > 100 ? content.substring(0, 100) + "..." : content));
             System.out.println("------------------第" + msg.getMessageNumber() + "封邮件解析结束-------------------- ");
             System.out.println();
 
+
+            //保存邮件
+            ReceivedEmail email = new ReceivedEmail();
+            email.setEmailNumber(msg.getMessageNumber());
+            email.setSubject(getSubject(msg));
+            email.setReceiverTO(getFrom(msg).toString());
+            email.setSendDate(getReceiveAddress(msg, null));
+            email.setSeen(isSeen(msg));
+            email.setPriority(getPriority(msg));
+            email.setReplySign(isReplySign(msg));
+            email.setEmialSize(msg.getSize() * 1024);
+            email.setHaveFile(isContainAttachment(msg));
+            if(email.isHaveFile()){
+                email.setFileDir("F:\\Study\\EmailFile_Receives\\");
+            }
+            email.setContent(content.toString());
+
+            list.add(email);
         }
+        return list;
     }
 
 
@@ -208,6 +297,27 @@ public class POP3ReceiveMailTest {
         return receiveAddress.toString();
     }
 
+    public static String getReceiveTO(MimeMessage msg, Message.RecipientType type) throws MessagingException {
+        StringBuffer receiveAddress = new StringBuffer();
+        Address[] addresss = null;
+        if (type == null) {
+            addresss = msg.getReplyTo();
+        } else {
+            addresss = msg.getRecipients(type);
+        }
+
+        if (addresss == null || addresss.length < 1)
+            throw new MessagingException("没有收件人!");
+        for (Address address : addresss) {
+            InternetAddress internetAddress = (InternetAddress) address;
+            receiveAddress.append(internetAddress.toUnicodeString()).append(",");
+        }
+
+        receiveAddress.deleteCharAt(receiveAddress.length() - 1); //删除最后一个逗号
+
+        return receiveAddress.toString();
+    }
+
     /**
      * 获得邮件发送时间
      *
@@ -222,6 +332,17 @@ public class POP3ReceiveMailTest {
 
         if (pattern == null || "".equals(pattern))
             pattern = "yyyy年MM月dd日 E HH:mm ";
+
+        return new SimpleDateFormat(pattern).format(receivedDate);
+    }
+
+    public static String getReceivedDate(MimeMessage msg, String pattern) throws MessagingException {
+        Date receivedDate = msg.getReceivedDate();
+        if (receivedDate == null)
+            return "";
+
+        if (pattern == null || "".equals(pattern))
+            pattern = "yyyy-MM-dd HH:mm:ss";
 
         return new SimpleDateFormat(pattern).format(receivedDate);
     }
@@ -390,8 +511,8 @@ public class POP3ReceiveMailTest {
             throws FileNotFoundException, IOException {
         System.out.println("dir:" + destDir);
         System.out.println("fileName:" + fileName);
-        File file = new File(destDir+fileName);
-        System.out.println("文件大小："+file.length() +" Bytes");
+        File file = new File(destDir + fileName);
+        System.out.println("文件大小：" + file.length() / 1024 + " kB");
         BufferedInputStream bis = new BufferedInputStream(is);
         BufferedOutputStream bos = new BufferedOutputStream(
                 new FileOutputStream(new File(destDir + fileName)));
@@ -418,6 +539,7 @@ public class POP3ReceiveMailTest {
             return MimeUtility.decodeText(encodeText);
         }
     }
+
 
 
 }

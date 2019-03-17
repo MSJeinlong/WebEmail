@@ -13,7 +13,7 @@ public class User {
 	private String password;
 	private int status;  //是否已经登录, 0-未登录， 1-已经登录
     private String phone;
-	private List<String> emaiList = new ArrayList<>();
+	private List<Email> emaiList = new ArrayList<>();
 
 	public User() {
 
@@ -46,12 +46,12 @@ public class User {
 		this.password = password;
 	}
 
-	public void addEmail(String email) {
-		emaiList.add(email);
+	public List<Email> getEmaiList() {
+		return emaiList;
 	}
 
-	public List<String> getEmaiList() {
-		return emaiList;
+	public void addEmaiList(Email email) {
+		this.emaiList.add(email);
 	}
 
 	public int getStatus() {
