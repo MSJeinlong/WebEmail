@@ -1,0 +1,16 @@
+body{
+    background-image: url('login/backgroundImage.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    color: azure;
+}
+
+.form{
+    text-align: center;
+}
+.message{
+    color: red;
+    font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+}

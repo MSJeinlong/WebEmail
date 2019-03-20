@@ -53,14 +53,15 @@ public class EmailDAOImpl implements EmailDAO {
     }
 
     @Override
-    public boolean query(Email email) {
-        String sql = "select * from user_email where name = ? and email = ? and password = ?";
+    public boolean contains(Email email) {
+        String sql = "select * from user_email where name = ? and email = ? and password = ? and id != ?";
         try {
             conn = DBConnection.getConnection();
             pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, email.getUsername());
             pstmt.setString(2, email.getEmail());
             pstmt.setString(3, email.getPassword());
+            pstmt.setInt(4, email.getId());
             rs = pstmt.executeQuery();
             if (rs.next()) {
                 return true;
@@ -82,11 +83,13 @@ public class EmailDAOImpl implements EmailDAO {
             rs = pstmt.executeQuery();
             while (rs.next()) {
                 Email email = new Email();
+                email.setId(rs.getInt("id"));
                 email.setUsername(name);
                 email.setEmail(rs.getString("email"));
                 email.setPassword(rs.getString("password"));
                 email.setAlias(rs.getString("alias"));
                 email.setNumber(rs.getInt("number"));
+                list.add(email);
             }
         } catch (SQLException e) {
             e.printStackTrace();

@@ -1,10 +1,9 @@
 package Controller;
 
-import bean.User;
 import Dao.UserDAO;
 import Dao.UserDAOImpl;
+import bean.User;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -21,17 +20,18 @@ public class RegisterServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String userName = request.getParameter("userName");
-        String phoneNumber = request.getParameter("phoneNumber");
+        //String phoneNumber = request.getParameter("phoneNumber");
         String password = request.getParameter("password");
         HttpSession session = request.getSession();
         UserDAO userDAO = new UserDAOImpl();
-        User u = new User(userName, password, phoneNumber);
+        User u = new User();
+        u.setUserName(userName);
+        u.setPassword(password);
         if(userDAO.add(u)){
             session.setAttribute("message", "注册成功！");
         } else {
             session.setAttribute("message", "注册失败！原因：用户名重复！");
         }
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/View/login.jsp");
-        dispatcher.forward(request, response);
+        response.sendRedirect("/login.jsp");
     }
 }

@@ -16,6 +16,17 @@ public class ContactDAOImpl implements ContactDAO {
     private PreparedStatement pstmt;
     private ResultSet rs;
 
+    public static void main(String[] args) {
+        ContactDAO contactDAO = new ContactDAOImpl();
+        Contact contact = new Contact();
+        contact.setUser_name("Zachary");
+        contact.setContact_name("邮箱");
+        List<Contact> list = contactDAO.query(contact);
+        for (Contact c: list) {
+            System.out.println(c);
+        }
+    }
+
     @Override
     public boolean add(Contact contact) {
         String sql = "insert into contacts(user_name, contact_name, contact_email) value(?,?,?)";
@@ -26,7 +37,7 @@ public class ContactDAOImpl implements ContactDAO {
             pstmt.setString(2, contact.getContact_name());
             pstmt.setString(3, contact.getContact_email());
             if (pstmt.executeUpdate() > 0) {
-                return false;
+                return true;
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -37,16 +48,17 @@ public class ContactDAOImpl implements ContactDAO {
     }
 
     @Override
-    public boolean query(Contact contact) {
-        String sql = "select * from contacts where user_name = ? and contact_name = ? and contact_email = ?";
+    public boolean contains(Contact contact) {
+        String sql = "select * from contacts where user_name = ? and contact_name = ? and contact_email = ? and id != ?";
         try {
             conn = DBConnection.getConnection();
             pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, contact.getUser_name());
             pstmt.setString(2, contact.getContact_name());
             pstmt.setString(3, contact.getContact_email());
+            pstmt.setInt(4, contact.getId());
             rs = pstmt.executeQuery();
-            if (rs.next()) {
+            if(rs.next()){
                 return true;
             }
         } catch (SQLException e) {
@@ -55,6 +67,32 @@ public class ContactDAOImpl implements ContactDAO {
             DBConnection.free(conn, pstmt, rs);
         }
         return false;
+    }
+
+    @Override
+    public List<Contact> query(Contact contact) {
+        List<Contact> contactList = new ArrayList<>();
+        String sql = "select * from contacts where user_name = ? and contact_name like ?";
+        try {
+            conn = DBConnection.getConnection();
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, contact.getUser_name());
+            pstmt.setString(2, "%" + contact.getContact_name() +"%");
+            rs = pstmt.executeQuery();
+           while (rs.next()){
+               Contact contact1 = new Contact();
+               contact1.setId(rs.getInt("id"));
+               contact1.setUser_name(contact.getUser_name());
+               contact1.setContact_name(rs.getString("contact_name"));
+               contact1.setContact_email(rs.getString("contact_email"));
+               contactList.add(contact1);
+           }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            DBConnection.free(conn, pstmt, rs);
+        }
+        return contactList;
     }
 
     @Override
@@ -68,6 +106,7 @@ public class ContactDAOImpl implements ContactDAO {
             rs = pstmt.executeQuery();
             while (rs.next()){
                 Contact contact = new Contact();
+                contact.setId(rs.getInt("id"));
                 contact.setUser_name(username);
                 contact.setContact_name(rs.getString("contact_name"));
                 contact.setContact_email(rs.getString("contact_email"));
@@ -78,18 +117,18 @@ public class ContactDAOImpl implements ContactDAO {
         } finally {
             DBConnection.free(conn, pstmt, rs);
         }
-        return null;
+        return list;
     }
 
     @Override
     public boolean update(Contact contact) {
-        String sql = "update contacts set contact_name = ?, contact_email = ? where user_name = ?";
+        String sql = "update contacts set contact_name = ?, contact_email = ? where id = ?";
         try {
             conn = DBConnection.getConnection();
             pstmt= conn.prepareStatement(sql);
             pstmt.setString(1, contact.getContact_name());
             pstmt.setString(2, contact.getContact_email());
-            pstmt.setString(3, contact.getUser_name());
+            pstmt.setInt(3, contact.getId());
             if(pstmt.executeUpdate() > 0){
                 return true;
             }

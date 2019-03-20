@@ -5,6 +5,7 @@ package bean;
  * 一个用户可以绑定多个Email
  */
 public class Email {
+    private int id;                 //标识id
     private String username;     //用户名
     private String email;       //用户对应的email
     private String password;    //email对应的密码
@@ -14,12 +15,20 @@ public class Email {
     public Email() {
     }
 
-    public Email(String username, String email, String password) {
+    public Email(String username, String email, String password, String alias) {
         this.username = username;
         this.email = email;
         this.password = password;
+        this.alias = alias;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getUsername() {
         return username;
@@ -64,7 +73,8 @@ public class Email {
     @Override
     public String toString() {
         return "Email{" +
-                "username='" + username + '\'' +
+                "id=" + id +
+                ", username='" + username + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", alias='" + alias + '\'' +

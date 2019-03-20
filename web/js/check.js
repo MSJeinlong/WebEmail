@@ -1,0 +1,27 @@
+function checkEmail() {
+   // alert(1);
+    var email = document.getElementById("email").value;
+    //alert(2);
+    //检查用户输入的邮箱是否被支持
+    if(email.indexOf("@163.com") > -1 || email.indexOf("@sina.cn") > -1){
+        //alert(3);
+        return true;
+    } else {
+        alert("您输入的邮箱暂时未支持，请重新输入！");
+        return false;
+    }
+}
+
+function checkNewPassword() {
+    var newPassword = document.getElementById("newPassword").value;
+    var conPassword = document.getElementById("conPassword").value;
+    var pattern = /[`~!@#$%^&*()_+<>?:"{},.\/;'[\]]/im;
+    if(newPassword != conPassword){
+        alert("两次输入的密码不一致！")
+        return false;
+    } else if (pattern.test(newPassword)){
+        alert("密码只能有数字和字母组成，不能含有特殊字符");
+        return false;
+    }
+    return true;
+}

@@ -24,7 +24,7 @@ public class UserDAOImpl implements UserDAO {
     @Override
     public boolean add(User u) {
         conn = DBConnection.getConnection();
-        String sql = "insert into User(name, password, phone, status) values(?, ?, ?, ?)";
+        String sql = "insert into users(username, password, phone, status) values(?, ?, ?, ?)";
         try {
             pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, u.getUserName());
@@ -44,7 +44,7 @@ public class UserDAOImpl implements UserDAO {
     @Override
     public boolean query(User u) {
         conn = DBConnection.getConnection();
-        String sql = "select * from User where name = ? and password = ?";
+        String sql = "select * from users where username = ? and password = ?";
         try {
             pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, u.getUserName());
@@ -62,6 +62,20 @@ public class UserDAOImpl implements UserDAO {
 
     @Override
     public boolean update(User u) {
+        String sql = "update users set password = ? where username = ?";
+        try {
+            conn = DBConnection.getConnection();
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, u.getPassword());
+            pstmt.setString(2, u.getUserName());
+            if(pstmt.executeUpdate() > 0){
+                return true;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            DBConnection.free(conn, pstmt, rs);
+        }
         return false;
     }
 

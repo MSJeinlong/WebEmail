@@ -5,6 +5,7 @@ package bean;
  * 一个用户可以有多个联系人
  */
 public class Contact {
+    private int id;
     private String user_name;
     private String contact_name;
     private String contact_email;
@@ -12,10 +13,19 @@ public class Contact {
     public Contact() {
     }
 
-    public Contact(String user_name, String contact_name, String contact_email) {
+    public Contact(int id, String user_name, String contact_name, String contact_email) {
+        this.id = id;
         this.user_name = user_name;
         this.contact_name = contact_name;
         this.contact_email = contact_email;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getUser_name() {

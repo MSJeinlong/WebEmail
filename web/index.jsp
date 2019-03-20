@@ -13,6 +13,13 @@
     <script type="text/javascript" src="/View/js/addAccount.js"></script>
 </head>
 <body>
-test;$你好<br />
+<h1>test;$你好</h1><br />
+<%--<%--%>
+    <%--String id = request.getParameter("id");--%>
+    <%--String ids = request.getParameter("ids");--%>
+<%--%>--%>
+<%--id = <%=id%>--%>
+<%--<br />--%>
+<%--ids = <%=ids%>--%>
 </body>
 </html>
