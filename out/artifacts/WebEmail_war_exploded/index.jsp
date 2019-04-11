@@ -21,5 +21,8 @@
 <%--id = <%=id%>--%>
 <%--<br />--%>
 <%--ids = <%=ids%>--%>
+<form action="/QuestionEditServlet" method="post">
+<input type="submit" value="提交"/>
+</form>
 </body>
 </html>

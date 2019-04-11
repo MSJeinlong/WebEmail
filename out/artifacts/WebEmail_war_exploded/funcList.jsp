@@ -31,61 +31,75 @@
 <body>
 <div class="container-fluid">
     <ul class="nav nav-pills nav-stacked">
-        <li role="presentation" class="navli">
+        <li role="presentation" class="nav-li ${active==1?"active":""}" onclick="showSendEmail()">
             <a href="#"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 发邮件</a>
         </li>
-        <li role="presentation" class="navli" onclick="showContacts()">
-            <a href="#"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> 通讯录<span
-                    class="badge pull-right">${contactNumber}</span></a>
+        <li role="presentation" class="nav-li ${active==2?"active":""}" onclick="showContacts()">
+            <a href="#"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> 通讯录
+                <span class="badge pull-right">${contactNumber}</span></a>
         </li>
-        <li role="presentation" class="navli" onclick="showEmails()">
-            <a href="#"><span class="glyphicon glyphicon-inbox" aria-hidden="true"></span> 收件箱<span
-                    class="badge pull-right">14</span></a>
+        <li role="presentation" class="nav-li ${active==3?"active":""}" onclick="showEmails()">
+            <a href="#"><span class="glyphicon glyphicon-inbox" aria-hidden="true"></span> 收件箱
+                <span class="badge pull-right">${receivedEmailsNumber}</span></a>
         </li>
-        <li role="presentation" class="navli">
-            <a href="#"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 草稿箱</a>
+        <%--<li role="presentation" class="navli">--%>
+        <%--<a href="#"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 草稿箱--%>
+        <%--<span class="badge pull-right">${draftsEmailsNumber}</span></a>--%>
+        <%--</li>--%>
+        <%--<li role="presentation" class="navli">--%>
+        <%--<a href="#"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> 收藏箱--%>
+        <%--<span class="badge pull-right">${favoritesEmailsNumber}</span></a>--%>
+        <%--</li>--%>
+        <li role="presentation" class="nav-li ${active==4?"active":""}" onclick="showAllSentEmail()">
+            <a href="#"><span class="glyphicon glyphicon-send" aria-hidden="true"></span> 已发送
+                <span class="badge pull-right">${sentEmailNumber}</span></a>
         </li>
-        <li role="presentation" class="navli">
-            <a href="#"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> 收藏箱</a>
-        </li>
-        <li role="presentation">
-            <a href="#"><span class="glyphicon glyphicon-send" aria-hidden="true"></span> 已发送</a>
-        </li>
-        <li role="presentation" class="navli">
-            <a href="#"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> 已删除</a>
-        </li>
-        <li role="presentation" class="navli">
+        <%--<li role="presentation" class="navli">--%>
+        <%--<a href="#"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> 已删除--%>
+        <%--<span class="badge pull-right">${deletedEmailsNumber}</span></a>--%>
+        <%--</li>--%>
+        <li role="presentation" class="nav-li">
             <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 邮箱账号 <span class="caret"></span>
             </a>
         </li>
     </ul>
     <div class="collapse" id="collapseExample">
-        <div class="well">
-            <ul class="nav nav-pills nav-stacked">
-                <%
-                    List<Email> list = (List<Email>) session.getAttribute("emailsList");
-                    for (Email emial : list) {
-                %>
-                <li role="presentation" class="coll-li"><a href="#"><strong><%=emial.getAlias()%></strong>:<%=emial.getEmail()%>
-                </a></li>
-                <%
-                    }
-                %>
-                <%--<li role="presentation" class="coll-li">--%>
-                <%--<a href="#">新浪邮箱</a>--%>
-                <%--</li>--%>
-                <%--<li role="presentation" class="coll-li">--%>
-                <%--<a href="#">qq邮箱</a>--%>
-                <%--</li>--%>
-            </ul>
-        </div>
+
+        <ul class="nav nav-pills nav-stacked">
+            <%
+                List<Email> list = (List<Email>) session.getAttribute("emailsList");
+                for (int i = 0; i < list.size(); i++) {
+                    Email email = list.get(i);
+                    session.setAttribute("i", i);
+            %>
+            <li role="presentation" class="coll-li pull-left ${activeEmailBox==i?"active":""}"><a
+                    href="/SwitchEmailBoxServlet?id=${i}"><strong><%=email.getAlias()%>:
+            </strong><%=email.getEmail()%>
+            </a></li>
+            <%
+                }
+            %>
+        </ul>
     </div>
 </div>
+<%
+    String mess = (String) session.getAttribute("switchMess");
+    if (mess != null && !mess.equals("")) {
+%>
 <script>
-    $(".navli").mousedown(function () {
+    alert("<%=mess%>");
+    window.parent.document.getElementById("rightFrame").src = "/ReceiveEmails.jsp";
+    window.parent.document.getElementById("topFrame").contentWindow.location.reload(true);
+</script>
+<%
+        session.setAttribute("switchMess", "");
+    }
+%>
+<script>
+    $(".nav-li").mousedown(function () {
         $(this).addClass('active');
-        $('.navli').not($(this)).removeClass("active");
+        $('.nav-li').not($(this)).removeClass("active");
     });
     $(".coll-li").mousedown(function () {
         $(this).addClass("active");

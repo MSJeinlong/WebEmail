@@ -12,73 +12,124 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8064642-f906-4153-adf4-1103ba9b1d03" name="Default Changelist" comment="3-19 5:25 finish userInfo">
-      <change afterPath="$PROJECT_DIR$/src/Controller/Contacts/DeleteContactsServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Contacts/GetAllContactsServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Contacts/SearchContactsServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Contacts/UpdateContactServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Contacts/addContactServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Email/AddEmailServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Email/DeleteEmailBoxServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Email/UpdateEmailServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/NewPasswordServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Bootstrap/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Bootstrap/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Bootstrap/js/holder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Bootstrap/js/jquery-3.3.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Bootstrap/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Images/backgroundImage.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/backgroundImage.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/account.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/addContact.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/backgroundImage.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/changePassword.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/contacts.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/clearMargin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/mainPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/emailList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/funcList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/changeMainPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/changeRightFrame.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/check.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/contacts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/loginCheck.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/mainPage.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/test1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/testBackgroundImage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/updateContact.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/updateEmailBox.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/userInfo.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Email/GetAllEmailServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Email/SearchEmailServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Email/SwitchEmailBoxServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/QuestionEditServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/ReadContentServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/ReceivedEmail/DownloadServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/ReceivedEmail/FalseDeleteServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/ReceivedEmail/GetAllReceivedEmailServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/ReceivedEmail/RefreshReceivedEmailServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/ReceivedEmail/SearchReceivedEmailServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/ReceivedEmail/TrueDeleteServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/SendEmails/DeleteSentEmailServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/SendEmails/ForwardEmailServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/SendEmails/GetAllSentEmailServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/SendEmails/SearchSentEmailServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/SendEmails/SendEmailServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/SendEmails/ShowSentContentServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dao/SendEmailDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dao/SendEmailDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Email/IMAP2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tools/POP3ReceiveEmail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tools/SMTPSendEmail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/ReceiveEmails.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/javax.mail.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jspsmartupload.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jsse-2.0.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/readReceivedEmail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/readSentEmail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/reply.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/sendEmail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/sendEmail2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/sentEmailList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/showEmailSubject.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/showSentEmailSubject.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/test2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/upload/uploadFile.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/upload/uploadUser.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebEmail.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WebEmail.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Controller/Contacts/DeleteContactsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Controller/Contacts/DeleteContactsServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Controller/Contacts/GetAllContactsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Controller/Contacts/GetAllContactsServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Controller/Contacts/SearchContactsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Controller/Contacts/SearchContactsServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Controller/Contacts/addContactServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Controller/Contacts/addContactServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Controller/GetEmailServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Controller/LoginCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Controller/LoginCheckFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Controller/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Controller/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Dao/EmailDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Dao/EmailDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Dao/EmailDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Dao/EmailDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Dao/ReceivedEmailDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Dao/ReceivedEmailDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Dao/ReceivedEmailsDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Email/IMAPReceiveMailTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Email/IMAPReceiveMailTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Email/POP3ReceiveMailTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Email/POP3ReceiveMailTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/Tools/POP3ToGetEmail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/bean/Email.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/bean/Email.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/bean/ReceivedEmail.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/bean/ReceivedEmail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/bean/SentEmail.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/classes/bean/SentEmail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/lib/activation.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/lib/activation.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/WEB-INF/lib/mail.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/account.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/account.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/contacts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/contacts.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/emailList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/funcList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/funcList.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/js/changeRightFrame.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/js/changeRightFrame.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/js/check.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/js/check.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/js/contacts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/mainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/mainPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/test1.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/test1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/userInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WebEmail_war_exploded/userInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WebEmail/META-INF/WebEmail.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Contacts/DeleteContactsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Contacts/DeleteContactsServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Contacts/GetAllContactsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Contacts/GetAllContactsServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Contacts/SearchContactsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Contacts/SearchContactsServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Contacts/addContactServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Contacts/addContactServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Email/AddEmailServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Email/AddEmailServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/GetEmailServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/LoginCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LoginCheckFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegisterServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/ContactDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/ContactDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/ContactDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/ContactDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dao/EmailDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/EmailDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dao/EmailDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/EmailDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dao/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/UserDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tools/POP3ToGetEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tools/POP3ToGetEmail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bean/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dao/ReceivedEmailDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/ReceivedEmailDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dao/ReceivedEmailsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/ReceivedEmailDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Email/IMAPReceiveMailTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Email/IMAPReceiveMailTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Email/POP3ReceiveMailTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Email/POP3ReceiveMailTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tools/POP3ToGetEmail.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bean/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/Email.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/View/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/View/login/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/index2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/addMailBox.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bean/ReceivedEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/ReceivedEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bean/SentEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/SentEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Controller/Contacts/DeleteContactsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Controller/Contacts/DeleteContactsServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Controller/Contacts/GetAllContactsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Controller/Contacts/GetAllContactsServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Controller/Contacts/SearchContactsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Controller/Contacts/SearchContactsServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Controller/Contacts/addContactServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Controller/Contacts/addContactServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Controller/GetEmailServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Controller/LoginCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Controller/LoginCheckFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Controller/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Controller/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/EmailDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/EmailDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/EmailDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/EmailDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/ReceivedEmailDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/ReceivedEmailDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Dao/ReceivedEmailsDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Email/IMAPReceiveMailTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Email/IMAPReceiveMailTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Email/POP3ReceiveMailTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Email/POP3ReceiveMailTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Tools/POP3ToGetEmail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/bean/Email.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/bean/Email.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/bean/ReceivedEmail.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/bean/ReceivedEmail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/bean/SentEmail.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/bean/SentEmail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/activation.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/activation.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/mail.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/account.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/account.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/contacts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/contacts.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/emailList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/forward.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/funcList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/funcList.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/changeRightFrame.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/changeRightFrame.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/check.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/check.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/UploadSave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/mainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/mainPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/test1.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/test1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/userInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/userInfo.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -86,9 +137,6 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
@@ -102,28 +150,53 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/userInfo.jsp">
+        <entry file="file://$PROJECT_DIR$/web/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="163" column="2" lean-forward="true" selection-start-line="163" selection-start-column="2" selection-end-line="163" selection-end-column="2" />
+            <state relative-caret-position="-153">
+              <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/Email/DeleteEmailBoxServlet.java">
+        <entry file="file://$PROJECT_DIR$/web/addMailBox.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="48" column="48" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="48" />
+            <state relative-caret-position="-408" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/Email/AddEmailServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/Contacts/DeleteContactsServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/Controller/LoginServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="53" column="51" lean-forward="true" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
+            <state relative-caret-position="595">
+              <caret line="46" column="52" lean-forward="true" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Tools/POP3ReceiveEmail.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="529" column="20" lean-forward="true" selection-start-line="529" selection-start-column="20" selection-end-line="529" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Tools/SMTPSendEmail.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-272">
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -131,61 +204,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/changeRightFrame.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="121" column="67" lean-forward="true" selection-start-line="121" selection-start-column="67" selection-end-line="121" selection-end-column="67" />
+            <state relative-caret-position="309">
+              <caret line="239" column="68" selection-start-line="239" selection-start-column="68" selection-end-line="239" selection-end-column="68" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/loginCheck.js">
+        <entry file="file://$PROJECT_DIR$/src/Controller/Email/GetAllEmailServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="55" />
+            <state relative-caret-position="85">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/contacts.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/Email/AddEmailServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/Dao/EmailDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="34" column="49" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="49" />
+            <state relative-caret-position="68">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/updateEmailBox.jsp">
+        <entry file="file://$PROJECT_DIR$/src/Controller/Contacts/SearchContactsServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="85" selection-start-line="85" selection-end-line="97" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/Email/UpdateEmailServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="45" column="53" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/contacts.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="164" column="13" lean-forward="true" selection-start-line="157" selection-start-column="3" selection-end-line="164" selection-end-column="13" />
-              <folding>
-                <marker date="1553005959661" expanded="true" signature="1510:1913" ph="..." />
-              </folding>
+            <state relative-caret-position="357">
+              <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -197,11 +244,11 @@
       <list>
         <option value="Arquillian JUnit Test Class" />
         <option value="JUnit4 Test Class" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="CSS File" />
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="Jsp File" />
       </list>
     </option>
@@ -226,57 +273,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/login2.jsp" />
-        <option value="$PROJECT_DIR$/web/View/login/login.jsp" />
-        <option value="$PROJECT_DIR$/web/css/login.css" />
-        <option value="$PROJECT_DIR$/web/js/loginCheck.js" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/mainPage.jsp" />
-        <option value="$PROJECT_DIR$/src/Controller/RegisterServlet.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/account.jsp" />
-        <option value="$PROJECT_DIR$/web/emailList.jsp" />
-        <option value="$PROJECT_DIR$/web/css/mainPage.css" />
-        <option value="$PROJECT_DIR$/web/css/clearMargin.css" />
-        <option value="$PROJECT_DIR$/web/View/js/addAccount.js" />
-        <option value="$PROJECT_DIR$/web/js/contacts.js" />
-        <option value="$PROJECT_DIR$/web/addContacts.jsp" />
-        <option value="$PROJECT_DIR$/web/js/changeMainPage.js" />
-        <option value="$PROJECT_DIR$/src/Controller/addContactServlet.java" />
-        <option value="$PROJECT_DIR$/web/login.jsp" />
-        <option value="$PROJECT_DIR$/src/Controller/SearchContactsServlet.java" />
-        <option value="$PROJECT_DIR$/web/test1.html" />
-        <option value="$PROJECT_DIR$/src/Controller/GetAllContactsServlet.java" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/src/Controller/Test.java" />
-        <option value="$PROJECT_DIR$/src/Dao/ContactDAO.java" />
-        <option value="$PROJECT_DIR$/src/Controller/Contacts/addContactServlet.java" />
-        <option value="$PROJECT_DIR$/web/js/refresh.js" />
-        <option value="$PROJECT_DIR$/src/Controller/Contacts/SearchContactsServlet.java" />
-        <option value="$PROJECT_DIR$/web/addContact.jsp" />
-        <option value="$PROJECT_DIR$/src/bean/Contact.java" />
-        <option value="$PROJECT_DIR$/web/updateContact.jsp" />
-        <option value="$PROJECT_DIR$/src/Tools/POP3ToGetEmail.java" />
-        <option value="$PROJECT_DIR$/web/funcList.jsp" />
-        <option value="$PROJECT_DIR$/web/contacts.jsp" />
         <option value="$PROJECT_DIR$/web/mainPage.jsp" />
-        <option value="$PROJECT_DIR$/src/Controller/Email/AddEmailServlet.java" />
-        <option value="$PROJECT_DIR$/web/addMailBox.jsp" />
+        <option value="$PROJECT_DIR$/src/Controller/SendEmails/ShowSentContentServlet.java" />
+        <option value="$PROJECT_DIR$/src/Controller/ReceivedEmail/FalseDeleteServlet.java" />
+        <option value="$PROJECT_DIR$/src/UploadUserSave.java" />
+        <option value="$PROJECT_DIR$/web/upload/uploadUser.jsp" />
+        <option value="$PROJECT_DIR$/web/upload/uploadFile.jsp" />
+        <option value="$PROJECT_DIR$/src/UploadSave.java" />
+        <option value="$PROJECT_DIR$/src/bean/SentEmail.java" />
+        <option value="$PROJECT_DIR$/web/sendEmail2.jsp" />
+        <option value="$PROJECT_DIR$/src/Tools/SMTPSendEmail.java" />
+        <option value="$PROJECT_DIR$/web/reply.jsp" />
+        <option value="$PROJECT_DIR$/src/bean/ReceivedEmail.java" />
+        <option value="$PROJECT_DIR$/src/Dao/ReceivedEmailDAO.java" />
+        <option value="$PROJECT_DIR$/src/Controller/ReceivedEmail/SearchReceivedEmailServlet.java" />
+        <option value="$PROJECT_DIR$/web/readSentEmail.jsp" />
+        <option value="$PROJECT_DIR$/src/Controller/SendEmails/SearchSentEmailServlet.java" />
+        <option value="$PROJECT_DIR$/web/showEmailSubject.jsp" />
+        <option value="$PROJECT_DIR$/src/Dao/ReceivedEmailDAOImpl.java" />
+        <option value="$PROJECT_DIR$/web/test1.html" />
+        <option value="$PROJECT_DIR$/src/Controller/ReceivedEmail/DownloadServlet.java" />
+        <option value="$PROJECT_DIR$/web/sendEmail.jsp" />
         <option value="$PROJECT_DIR$/web/account.jsp" />
-        <option value="$PROJECT_DIR$/src/Dao/UserDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/Controller/NewPasswordServlet.java" />
-        <option value="$PROJECT_DIR$/src/Controller/LoginServlet.java" />
-        <option value="$PROJECT_DIR$/web/js/check.js" />
-        <option value="$PROJECT_DIR$/web/changePassword.jsp" />
-        <option value="$PROJECT_DIR$/src/bean/Email.java" />
+        <option value="$PROJECT_DIR$/web/forward.jsp" />
+        <option value="$PROJECT_DIR$/src/Controller/LoginCheckFilter.java" />
         <option value="$PROJECT_DIR$/src/Controller/Contacts/UpdateContactServlet.java" />
-        <option value="$PROJECT_DIR$/src/Dao/ContactDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/Dao/EmailDAO.java" />
-        <option value="$PROJECT_DIR$/src/Dao/EmailDAOImpl.java" />
-        <option value="$PROJECT_DIR$/web/updateEmailBox.jsp" />
-        <option value="$PROJECT_DIR$/src/Controller/Email/UpdateEmailServlet.java" />
-        <option value="$PROJECT_DIR$/web/js/changeRightFrame.js" />
+        <option value="$PROJECT_DIR$/src/Controller/ReceivedEmail/GetAllReceivedEmailServlet.java" />
+        <option value="$PROJECT_DIR$/src/Controller/Contacts/addContactServlet.java" />
         <option value="$PROJECT_DIR$/src/Controller/Contacts/DeleteContactsServlet.java" />
-        <option value="$PROJECT_DIR$/src/Controller/Email/DeleteEmailBoxServlet.java" />
+        <option value="$PROJECT_DIR$/src/Controller/Contacts/GetAllContactsServlet.java" />
+        <option value="$PROJECT_DIR$/src/Controller/ReceivedEmail/RefreshReceivedEmailServlet.java" />
+        <option value="$PROJECT_DIR$/src/Controller/ReceivedEmail/TrueDeleteServlet.java" />
+        <option value="$PROJECT_DIR$/src/Controller/SendEmails/ForwardEmailServlet.java" />
+        <option value="$PROJECT_DIR$/src/Controller/SendEmails/SendEmailServlet.java" />
+        <option value="$PROJECT_DIR$/web/funcList.jsp" />
+        <option value="$PROJECT_DIR$/src/Controller/Email/SwitchEmailBoxServlet.java" />
+        <option value="$PROJECT_DIR$/web/readReceivedEmail.jsp" />
+        <option value="$PROJECT_DIR$/web/ReceiveEmails.jsp" />
+        <option value="$PROJECT_DIR$/src/Controller/SendEmails/GetAllSentEmailServlet.java" />
+        <option value="$PROJECT_DIR$/web/showSentEmailSubject.jsp" />
+        <option value="$PROJECT_DIR$/src/Dao/SendEmailDAO.java" />
+        <option value="$PROJECT_DIR$/src/Controller/SendEmails/DeleteSentEmailServlet.java" />
+        <option value="$PROJECT_DIR$/web/js/changeRightFrame.js" />
+        <option value="$PROJECT_DIR$/web/sentEmailList.jsp" />
+        <option value="$PROJECT_DIR$/src/Dao/SendEmailDAOImpl.java" />
+        <option value="$PROJECT_DIR$/web/contacts.jsp" />
+        <option value="$PROJECT_DIR$/src/Controller/Contacts/SearchContactsServlet.java" />
+        <option value="$PROJECT_DIR$/src/Dao/EmailDAOImpl.java" />
         <option value="$PROJECT_DIR$/web/userInfo.jsp" />
+        <option value="$PROJECT_DIR$/src/Tools/POP3ReceiveEmail.java" />
+        <option value="$PROJECT_DIR$/src/Controller/Email/AddEmailServlet.java" />
+        <option value="$PROJECT_DIR$/src/Controller/LoginServlet.java" />
       </list>
     </option>
   </component>
@@ -287,10 +334,10 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1270" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-12" />
     <option name="width" value="1302" />
-    <option name="height" value="1372" />
+    <option name="height" value="1374" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -316,20 +363,7 @@
               <item name="WebEmail" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebEmail" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebEmail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebEmail" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebEmail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebEmail" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-              <item name="Contacts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebEmail" type="b2602c69:ProjectViewProjectNode" />
@@ -347,6 +381,12 @@
             <path>
               <item name="WebEmail" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebEmail" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Tools" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebEmail" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebEmail" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -355,12 +395,22 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="WebEmail" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebEmail" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebEmail" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -371,38 +421,40 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553066195252" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553840004596" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Bootstrap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="Email" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Study\IntelliJ IDEA\WebEmail\web" />
-      <recent name="F:\Study\IntelliJ IDEA\WebEmail\web\View\css" />
-      <recent name="F:\Study\IntelliJ IDEA\WebEmail\web\View\login" />
-      <recent name="F:\Study\IntelliJ IDEA\WebEmail\web\demo1" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Study\IntelliJ IDEA\WebEmail\web\WEB-INF\lib" />
+      <recent name="F:\Study\IntelliJ IDEA\WebEmail\src" />
+      <recent name="F:\Study\IntelliJ IDEA\WebEmail\web\upload" />
+      <recent name="F:\Study\IntelliJ IDEA\WebEmail\src\Controller" />
+      <recent name="F:\Study\IntelliJ IDEA\WebEmail\src\Tools" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Study\IntelliJ IDEA\WebEmail\web\css" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Study\IntelliJ IDEA\WebEmail\web\WEB-INF\lib" />
       <recent name="F:\Study\IntelliJ IDEA\WebEmail\web" />
-      <recent name="F:\Study\IntelliJ IDEA\WebEmail\web\WEB-INF" />
-      <recent name="F:\Study\IntelliJ IDEA\WebEmail\web\Images" />
-      <recent name="F:\Study\IntelliJ IDEA\WebEmail\web\View\mainUI" />
+      <recent name="F:\Study\IntelliJ IDEA\WebEmail\web\View\css" />
+      <recent name="F:\Study\IntelliJ IDEA\WebEmail\web\View\login" />
+      <recent name="F:\Study\IntelliJ IDEA\WebEmail\web\demo1" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -418,12 +470,12 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.14">
-    <configuration name="ContactDAOImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Dao.ContactDAOImpl" />
+    <configuration name="IMAP2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Email.IMAP2" />
       <module name="WebEmail" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Dao.*" />
+          <option name="PATTERN" value="Email.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -431,12 +483,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmailDAOImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Dao.EmailDAOImpl" />
+    <configuration name="IMAPReceiveMailTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Email.IMAPReceiveMailTest" />
       <module name="WebEmail" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Dao.*" />
+          <option name="PATTERN" value="Email.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="POP3ReceiveEmail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tools.POP3ReceiveEmail" />
+      <module name="WebEmail" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tools.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -457,21 +522,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Controller.Test" />
+    <configuration name="SMTPSendEmail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tools.SMTPSendEmail" />
       <module name="WebEmail" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Controller.*" />
+          <option name="PATTERN" value="Tools.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="login.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/login.jsp">
-      <method v="2" />
     </configuration>
     <configuration name="Tomcat 9.0.14" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.14" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
@@ -550,19 +612,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.POP3ReceiveMailTest" />
-      <item itemvalue="Application.EmailDAOImpl" />
-      <item itemvalue="Application.ContactDAOImpl" />
-      <item itemvalue="Application.Test" />
-      <item itemvalue="JavaScript Debug.login.jsp" />
+      <item itemvalue="Application.IMAPReceiveMailTest" />
+      <item itemvalue="Application.IMAP2" />
+      <item itemvalue="Application.SMTPSendEmail" />
+      <item itemvalue="Application.POP3ReceiveEmail" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.14" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.ContactDAOImpl" />
-        <item itemvalue="JavaScript Debug.login.jsp" />
+        <item itemvalue="Application.POP3ReceiveEmail" />
+        <item itemvalue="Application.SMTPSendEmail" />
         <item itemvalue="Application.POP3ReceiveMailTest" />
-        <item itemvalue="Application.EmailDAOImpl" />
+        <item itemvalue="Application.IMAP2" />
+        <item itemvalue="Application.IMAPReceiveMailTest" />
       </list>
     </recent_temporary>
   </component>
@@ -608,7 +670,15 @@
       <workItem from="1552812909418" duration="6564000" />
       <workItem from="1552829317843" duration="6218000" />
       <workItem from="1552886907182" duration="64493000" />
-      <workItem from="1553053317677" duration="10250000" />
+      <workItem from="1553053317677" duration="36788000" />
+      <workItem from="1553129410631" duration="46533000" />
+      <workItem from="1553210153652" duration="7402000" />
+      <workItem from="1553222874341" duration="4345000" />
+      <workItem from="1553233404543" duration="680000" />
+      <workItem from="1553495931015" duration="29618000" />
+      <workItem from="1553740893678" duration="15668000" />
+      <workItem from="1553820604875" duration="1375000" />
+      <workItem from="1553837506247" duration="2470000" />
     </task>
     <task id="LOCAL-00001" summary="delete Login folder, write the code by myself">
       <created>1551593572532</created>
@@ -654,23 +724,22 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="230807000" />
+    <option name="totallyTimeSpent" value="365436000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1293" height="693" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.66243654" visible="true" weight="0.21214575" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.18421052" side_tool="true" weight="0.21052632" />
-      <window_info id="Web" order="7" sideWeight="0.33756346" side_tool="true" visible="true" weight="0.21214575" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7939914" visible="true" weight="0.21133603" />
+      <window_info id="Designer" order="1" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.18421052" side_tool="true" weight="0.21052632" />
+      <window_info id="Web" order="6" sideWeight="0.20600858" side_tool="true" weight="0.2291498" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32962963" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4979757" visible="true" weight="0.27037036" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4979757" weight="0.3962963" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -679,7 +748,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32894737" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5020243" side_tool="true" weight="0.4185185" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.6388664" weight="0.3314815" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.6388664" weight="0.3888889" />
       <window_info anchor="bottom" id="Problems" order="12" weight="0.32777777" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
@@ -694,7 +763,44 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32955465" />
+      <window_info anchor="right" id="Structure" order="10" sideWeight="0.34438777" side_tool="true" weight="0.19190283" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6574074" visible="true" weight="0.25910932" />
+      <window_info id="Designer" order="1" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.18421052" side_tool="true" weight="0.21052632" />
+      <window_info id="Web" order="6" sideWeight="0.3425926" side_tool="true" weight="0.2582996" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32962963" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4979757" visible="true" weight="0.3537037" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32894737" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32894737" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5020243" side_tool="true" weight="0.4185185" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.6388664" weight="0.39074075" />
+      <window_info anchor="bottom" id="Problems" order="12" weight="0.32777777" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="15" weight="0.32962963" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32955465" />
+      <window_info anchor="right" id="Structure" order="10" sideWeight="0.34438777" side_tool="true" weight="0.2097166" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -710,367 +816,340 @@
     <option name="LAST_COMMIT_MESSAGE" value="3-19 5:25 finish userInfo" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/css/clearMargin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/View/mainUI/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="17" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/View/css/main.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/emailList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/mainPage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Bootstrap/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="4588" column="14" lean-forward="true" selection-start-line="4588" selection-start-column="14" selection-end-line="4588" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/View/mainUI/account.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/View/js/addAccount.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="85" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/LoginCheckFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="322">
+          <caret line="49" column="47" lean-forward="true" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/changeMainPage.js">
+    <entry file="file://$PROJECT_DIR$/src/Controller/ReceivedEmail/FalseDeleteServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" selection-start-column="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/test1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bean/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/EncodeFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/refresh.js" />
-    <entry file="file://$PROJECT_DIR$/src/Controller/Contacts/SearchContactsServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+        <state relative-caret-position="85">
+          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/Contacts/addContactServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="37" column="52" lean-forward="true" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
+        <state relative-caret-position="68">
+          <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/Contacts/GetAllContactsServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="25" column="51" lean-forward="true" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Email/IMAPReceiveMailTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tools/POP3ToGetEmail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Email/POP3ReceiveMailTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="64" column="45" lean-forward="true" selection-start-line="64" selection-start-column="45" selection-end-line="64" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/addContact.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/mainPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/account.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dao/UserDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="64" column="72" selection-start-line="64" selection-start-column="72" selection-end-line="64" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/NewPasswordServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="39" column="52" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bean/Email.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="73" column="18" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
-          <folding>
-            <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#639#640#0" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-            <element signature="e#700#701#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/changePassword.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="75" column="43" lean-forward="true" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/addMailBox.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="25" column="7" lean-forward="true" selection-end-line="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="49" column="44" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/funcList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="98" selection-start-line="54" selection-start-column="98" selection-end-line="54" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/check.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bean/Contact.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="79" selection-start-line="15" selection-start-column="79" selection-end-line="15" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1598">
-          <caret line="100" column="35" selection-start-line="100" selection-start-column="35" selection-end-line="100" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dao/ContactDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/updateContact.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dao/ContactDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dao/EmailDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="27" />
+        <state relative-caret-position="131">
+          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/Contacts/UpdateContactServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        <state relative-caret-position="51">
+          <caret line="33" column="54" lean-forward="true" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dao/EmailDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/Controller/ReceivedEmail/DownloadServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="63" column="43" lean-forward="true" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-25">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/updateEmailBox.jsp">
+    <entry file="file://$PROJECT_DIR$/src/Controller/SendEmails/ForwardEmailServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="85" selection-start-line="85" selection-end-line="97" selection-end-column="2" />
+        <state relative-caret-position="138">
+          <caret line="98" column="7" selection-start-line="98" selection-start-column="7" selection-end-line="98" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/contacts.jsp">
+    <entry file="file://$PROJECT_DIR$/src/Controller/SendEmails/SendEmailServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="164" column="13" lean-forward="true" selection-start-line="157" selection-start-column="3" selection-end-line="164" selection-end-column="13" />
-          <folding>
-            <marker date="1553005959661" expanded="true" signature="1510:1913" ph="..." />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="104" column="42" selection-start-line="104" selection-start-column="42" selection-end-line="104" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/loginCheck.js">
+    <entry file="file://$PROJECT_DIR$/web/account.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="55" />
+        <state relative-caret-position="-359">
+          <caret line="54" column="44" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/contacts.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/changeRightFrame.js">
+    <entry file="file://$PROJECT_DIR$/src/Controller/ReceivedEmail/RefreshReceivedEmailServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="121" column="67" lean-forward="true" selection-start-line="121" selection-start-column="67" selection-end-line="121" selection-end-column="67" />
+        <state relative-caret-position="174">
+          <caret line="46" column="40" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Email/AddEmailServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/Controller/ReceivedEmail/TrueDeleteServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="34" column="49" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="49" />
+        <state relative-caret-position="174">
+          <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Contacts/DeleteContactsServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/Controller/SendEmails/ShowSentContentServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="53" column="51" lean-forward="true" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
+        <state relative-caret-position="-121">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/emailList.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/Controller/Email/changeEmailServlet.java" />
+    <entry file="file://$PROJECT_DIR$/src/Controller/Email/SearchEmailServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/Email/UpdateEmailServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="45" column="53" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="53" />
+        <state relative-caret-position="-323">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Email/DeleteEmailBoxServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/Controller/GetEmailServlet.java" />
+    <entry file="file://$PROJECT_DIR$/src/Controller/NewPasswordServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="48" column="48" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="48" />
+        <state relative-caret-position="-170">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/QuestionEditServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ReadContentServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/RegisterServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Email/SwitchEmailBoxServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ReceiveEmails.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="52" column="98" selection-start-line="52" selection-start-column="98" selection-end-line="52" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ReceivedEmail/GetAllReceivedEmailServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/funcList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="52" column="90" lean-forward="true" selection-start-line="52" selection-start-column="90" selection-end-line="52" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/readReceivedEmail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/showEmailSubject.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1053">
+          <caret line="83" column="22" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/showSentEmailSubject.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-391">
+          <caret line="37" column="67" selection-start-line="37" selection-start-column="67" selection-end-line="37" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dao/SendEmailDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dao/ReceivedEmailDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="98" column="21" selection-start-line="86" selection-start-column="3" selection-end-line="98" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/SendEmails/GetAllSentEmailServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="31" column="70" selection-start-line="28" selection-start-column="7" selection-end-line="31" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Contacts/DeleteContactsServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="57" column="40" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/SendEmails/DeleteSentEmailServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/sentEmailList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="140" column="33" selection-start-line="140" selection-start-column="33" selection-end-line="140" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dao/SendEmailDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="153" column="35" selection-start-line="153" selection-start-column="35" selection-end-line="153" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/forward.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="51" column="26" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/contacts.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="47" column="97" selection-start-line="47" selection-start-column="97" selection-end-line="47" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/SendEmails/SearchSentEmailServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="31" column="61" lean-forward="true" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/userInfo.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="163" column="2" lean-forward="true" selection-start-line="163" selection-start-column="2" selection-end-line="163" selection-end-column="2" />
+        <state relative-caret-position="2737">
+          <caret line="161" column="18" selection-start-line="161" selection-start-column="18" selection-end-line="161" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dao/EmailDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2278">
+          <caret line="139" column="43" selection-start-line="139" selection-start-column="43" selection-end-line="139" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Email/DeleteEmailBoxServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Email/GetAllEmailServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dao/EmailDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Contacts/SearchContactsServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/changeRightFrame.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="239" column="68" selection-start-line="239" selection-start-column="68" selection-end-line="239" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tools/POP3ReceiveEmail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="529" column="20" lean-forward="true" selection-start-line="529" selection-start-column="20" selection-end-line="529" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="46" column="52" lean-forward="true" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tools/SMTPSendEmail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-272">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Email/AddEmailServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/addMailBox.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
         </state>
       </provider>
     </entry>

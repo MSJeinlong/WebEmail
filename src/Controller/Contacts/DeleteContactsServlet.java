@@ -55,6 +55,7 @@ public class DeleteContactsServlet extends HttpServlet {
         //更新Session里的contactList和contactNumber
         session.setAttribute("contactList", list);
         session.setAttribute("contactNumber", list.size());
+        session.setAttribute("active", 2);
         //返回删除的结果
         session.setAttribute("deleteMess", successCount + " 个联系人删除成功， " + failCount + " 个失败");
         response.sendRedirect("/contacts.jsp");

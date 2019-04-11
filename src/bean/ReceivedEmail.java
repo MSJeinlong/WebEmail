@@ -13,16 +13,51 @@ public class ReceivedEmail {
     private String sender;          //发件人
     private String receiverTO;      //收件人地址
     private String receiverCC;      //抄送人地址
-    private String sendDate;        //发件时间
+    private String sentDate;        //接收时间
     private boolean isSeen;          //邮件是否已读
     private String priority;       //邮件优先级
     private boolean isReplySign;     //邮件是否需要回执
-    private int emialSize;        //邮件大小
-    private boolean isHaveFile;      //是否包含附件
-    private String fileDir;         //附件在本地计算机中保存的地址
-    private int fileSize;        //附件大小
-    private String fileName;        //附件名称
+    private int emailSize;        //邮件大小
+    private boolean haveAttachment;      //是否包含附件
+    private String attachmentPath;         //附件在本地计算机中保存的路径
+    private String attachmentName;
+    private int attachmentSize;        //附件大小
+    //  private String fileName;        //附件名称
     private String content;         //邮件正文
+
+    @Override
+    public String toString() {
+        return "ReceivedEmail{" +
+                "emailId=" + emailId +
+                ", userName='" + userName + '\'' +
+                ", emailNumber=" + emailNumber +
+                ", emailAddress='" + emailAddress + '\'' +
+                ", subject='" + subject + '\'' +
+                ", sender='" + sender + '\'' +
+                ", receiverTO='" + receiverTO + '\'' +
+                ", receiverCC='" + receiverCC + '\'' +
+                ", sentDate='" + sentDate + '\'' +
+                ", isSeen=" + isSeen +
+                ", priority='" + priority + '\'' +
+                ", isReplySign=" + isReplySign +
+                ", emailSize=" + emailSize +
+                ", haveAttachment=" + haveAttachment +
+                ", attachmentPath='" + attachmentPath + '\'' +
+                ", attachmentSize=" + attachmentSize +
+                ", content='" + content + '\'' +
+                ", isFavorites=" + isFavorites +
+                ", isDelete=" + isDelete +
+                '}';
+    }
+
+    public String getAttachmentName() {
+        return attachmentName;
+    }
+
+    public void setAttachmentName(String attachmentName) {
+        this.attachmentName = attachmentName;
+    }
+
     private boolean isFavorites;     //邮件是否被收藏
     private boolean isDelete;        //邮件是否暂时删除（逻辑上的删除，其实是移动到“已删除”）
 
@@ -85,12 +120,12 @@ public class ReceivedEmail {
         this.receiverCC = receiverCC;
     }
 
-    public String getSendDate() {
-        return sendDate;
+    public String getSentDate() {
+        return sentDate;
     }
 
-    public void setSendDate(String sendDate) {
-        this.sendDate = sendDate;
+    public void setSentDate(String sentDate) {
+        this.sentDate = sentDate;
     }
 
     public boolean isSeen() {
@@ -125,44 +160,36 @@ public class ReceivedEmail {
         isReplySign = replySign;
     }
 
-    public int getEmialSize() {
-        return emialSize;
+    public int getEmailSize() {
+        return emailSize;
     }
 
-    public void setEmialSize(int emialSize) {
-        this.emialSize = emialSize;
+    public void setEmailSize(int emailSize) {
+        this.emailSize = emailSize;
     }
 
-    public boolean isHaveFile() {
-        return isHaveFile;
+    public boolean isHaveAttachment() {
+        return haveAttachment;
     }
 
-    public void setHaveFile(boolean haveFile) {
-        isHaveFile = haveFile;
+    public void setHaveAttachment(boolean haveAttachment) {
+        this.haveAttachment = haveAttachment;
     }
 
-    public String getFileDir() {
-        return fileDir;
+    public String getAttachmentPath() {
+        return attachmentPath;
     }
 
-    public void setFileDir(String fileDir) {
-        this.fileDir = fileDir;
+    public void setAttachmentPath(String attachmentPath) {
+        this.attachmentPath = attachmentPath;
     }
 
-    public int getFileSize() {
-        return fileSize;
+    public int getAttachmentSize() {
+        return attachmentSize;
     }
 
-    public void setFileSize(int fileSize) {
-        this.fileSize = fileSize;
-    }
-
-    public String getFileName() {
-        return fileName;
-    }
-
-    public void setFileName(String fileName) {
-        this.fileName = fileName;
+    public void setAttachmentSize(int attachmentSize) {
+        this.attachmentSize = attachmentSize;
     }
 
     public String getContent() {

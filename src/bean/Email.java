@@ -11,6 +11,24 @@ public class Email {
     private String password;    //email对应的密码
     private String alias;       //备注
     private int number;         //该email所对应的收件箱的邮件数量
+    private String smtpHost;    //smtp服务器地址
+    private String pop3Host;    //pop3服务器地址
+
+    public String getSmtpHost() {
+        return smtpHost;
+    }
+
+    public void setSmtpHost(String smtpHost) {
+        this.smtpHost = smtpHost;
+    }
+
+    public String getPop3Host() {
+        return pop3Host;
+    }
+
+    public void setPop3Host(String pop3Host) {
+        this.pop3Host = pop3Host;
+    }
 
     public Email() {
     }

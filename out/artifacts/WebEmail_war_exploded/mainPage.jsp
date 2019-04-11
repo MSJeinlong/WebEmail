@@ -28,7 +28,7 @@
 <div class="container-fluid">
     <iframe class="top" src="account.jsp" id="topFrame"></iframe>
     <iframe class="left" src="funcList.jsp" id="leftFrame"></iframe>
-    <iframe class="right" src="userInfo.jsp" id="rightFrame"></iframe>
+    <iframe class="right" src="ReceiveEmails.jsp" id="rightFrame"></iframe>
 </div>
 </body>
 </html>

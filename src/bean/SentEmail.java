@@ -6,6 +6,7 @@ package bean;
  */
 public class SentEmail {
     private int emailId;            //邮件编号
+    private int emailNumber;        //邮件序号
     private String userName;        //用户名
     private String emailFrom;       //发件人
     private String emailTO;         //收件人
@@ -13,14 +14,48 @@ public class SentEmail {
     private String emailBC;         //暗送人
     private String subject;         //主题
     private String content;         //邮件正文
-    private String haveAttachment;  //是否包含附件
+    private boolean containsAttachment;  //是否包含附件
     private String attachmentPath;      //附件路径
     private String attachmentName;      //附件名称
-    private String attachmentSize;      //附件大小
+    private int attachmentSize;      //附件大小
     private boolean favorites;          //是否已经收藏
     private boolean delete;             //是否删除了
+    private String sendDate;            //发送时间
+    private boolean sent;               //是否已经发送
 
     public SentEmail() {
+    }
+
+    public boolean isSent() {
+        return sent;
+    }
+
+    public void setSent(boolean sent) {
+        this.sent = sent;
+    }
+
+    public String getSendDate() {
+        return sendDate;
+    }
+
+    public void setSendDate(String sendDate) {
+        this.sendDate = sendDate;
+    }
+
+    public int getEmailNumber() {
+        return emailNumber;
+    }
+
+    public void setEmailNumber(int emailNumber) {
+        this.emailNumber = emailNumber;
+    }
+
+    public boolean isContainsAttachment() {
+        return containsAttachment;
+    }
+
+    public void setContainsAttachment(boolean containsAttachment) {
+        this.containsAttachment = containsAttachment;
     }
 
     public int getEmailId() {
@@ -87,13 +122,6 @@ public class SentEmail {
         this.content = content;
     }
 
-    public String getHaveAttachment() {
-        return haveAttachment;
-    }
-
-    public void setHaveAttachment(String haveAttachment) {
-        this.haveAttachment = haveAttachment;
-    }
 
     public String getAttachmentPath() {
         return attachmentPath;
@@ -111,11 +139,11 @@ public class SentEmail {
         this.attachmentName = attachmentName;
     }
 
-    public String getAttachmentSize() {
+    public int getAttachmentSize() {
         return attachmentSize;
     }
 
-    public void setAttachmentSize(String attachmentSize) {
+    public void setAttachmentSize(int attachmentSize) {
         this.attachmentSize = attachmentSize;
     }
 
@@ -146,7 +174,7 @@ public class SentEmail {
                 ", emailBC='" + emailBC + '\'' +
                 ", subject='" + subject + '\'' +
                 ", content='" + content + '\'' +
-                ", haveAttachment='" + haveAttachment + '\'' +
+                ", containsAttachment='" + containsAttachment + '\'' +
                 ", attachmentPath='" + attachmentPath + '\'' +
                 ", attachmentName='" + attachmentName + '\'' +
                 ", attachmentSize='" + attachmentSize + '\'' +

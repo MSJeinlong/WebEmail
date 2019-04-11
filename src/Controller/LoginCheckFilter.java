@@ -44,10 +44,10 @@ public class LoginCheckFilter implements Filter {
 		    HttpServletResponse res = (HttpServletResponse) response;
 		    HttpSession session = req.getSession();
 		    
-		    if (session.getAttribute("userName") != null) {
+		    if (session.getAttribute("username") != null) {
 		        chain.doFilter(request, response);
 		    } else {
-		        res.sendRedirect(webRoot+"/LoginServlet");
+		        res.sendRedirect("/login.jsp");
 		    }
 		// pass the request along the filter chain
 		//chain.doFilter(request, response);

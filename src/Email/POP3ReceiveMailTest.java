@@ -1,5 +1,6 @@
 package Email;
 
+import bean.Email;
 import bean.ReceivedEmail;
 
 import javax.mail.*;
@@ -24,14 +25,15 @@ import java.util.Properties;
  */
 public class POP3ReceiveMailTest {
 
+
     private static int index = 1;
     private static String port = "110";   // 端口号
-    private static String servicePath = "pop.sina.cn";   // 服务器地址
-    private static String user = "15917362227@sina.cn";     //账号
-    private static String password = "intel365";            //密码
+    private static String servicePath = "pop.163.com";   // 服务器地址
+    private static String user = "15917362227@163.com";     //账号
+    private static String password = "En9857361";            //密码
 
     public static void main(String[] args) throws Exception {
-        resceive();
+        resceive(null);
     }
 
 
@@ -98,7 +100,7 @@ public class POP3ReceiveMailTest {
     /**
      * 接收邮件
      */
-    public static void resceive() throws Exception {
+    public static void resceive(List<Email> list) throws Exception {
         /**
          　　* 因为现在使用的是163邮箱 而163的 pop地址是　pop3.163.com　 端口是　110　　
          　　　　　* 比如使用好未来企业邮箱 就需要换成 好未来邮箱的 pop服务器地址 pop.163.net  和   端口 110
@@ -162,6 +164,8 @@ public class POP3ReceiveMailTest {
             System.out.println("主题: " + getSubject(msg));
             System.out.println("发件人: " + getFrom(msg));
             System.out.println("收件人：" + getReceiveAddress(msg, null));
+//            System.out.println("抄送人：" + getReceiveAddress(msg, Message.RecipientType.CC));
+//            System.out.println("密送人：" + getReceiveAddress(msg, Message.RecipientType.BCC));
             //System.out.println("抄送人："+MimeUtility.decodeText());
             System.out.println("发送时间：" + getSentDate(msg, null));
             System.out.println("接收时间：" + getReceivedDate(msg, null));
@@ -176,7 +180,7 @@ public class POP3ReceiveMailTest {
             }
             StringBuffer content = new StringBuffer();
             getMailTextContent(msg, content);
-            System.out.println("邮件正文：" +content.toString());
+            System.out.println("邮件正文：" + content.toString());
             //System.out.println("邮件正文：" + (content.length() > 100 ? content.substring(0, 100) + "..." : content));
             System.out.println("------------------第" + msg.getMessageNumber() + "封邮件解析结束-------------------- ");
             System.out.println();
@@ -187,14 +191,14 @@ public class POP3ReceiveMailTest {
             email.setEmailNumber(msg.getMessageNumber());
             email.setSubject(getSubject(msg));
             email.setReceiverTO(getFrom(msg).toString());
-            email.setSendDate(getReceiveAddress(msg, null));
+            email.setSentDate(getReceiveAddress(msg, null));
             email.setSeen(isSeen(msg));
             email.setPriority(getPriority(msg));
             email.setReplySign(isReplySign(msg));
-            email.setEmialSize(msg.getSize() * 1024);
-            email.setHaveFile(isContainAttachment(msg));
-            if(email.isHaveFile()){
-                email.setFileDir("F:\\Study\\EmailFile_Receives\\");
+            email.setEmailSize(msg.getSize() * 1024);
+            email.setHaveAttachment(isContainAttachment(msg));
+            if (email.isHaveAttachment()) {
+                email.setAttachmentPath("F:\\Study\\EmailFile_Receives\\");
             }
             email.setContent(content.toString());
 
@@ -539,7 +543,5 @@ public class POP3ReceiveMailTest {
             return MimeUtility.decodeText(encodeText);
         }
     }
-
-
 
 }

@@ -37,17 +37,17 @@
 
     <div class="panel panel-info navbar-fixed-top">
         <div class="panel-heading">
-            <button type="button" class="btn btn-success" onclick="addContacts()">添加</button>
-            <button type="button" class="btn btn-primary">写信</button>
-            <button type="button" class="btn btn-info" onclick="updateContact()">编辑</button>
-            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal"
+            <button type="button" class="btn btn-success btn-sm" onclick="addContacts()">添加</button>
+            <button type="button" class="btn btn-primary btn-sm" onclick="sendEmailToContact()">写信</button>
+            <button type="button" class="btn btn-info btn-sm" onclick="updateContact()">编辑</button>
+            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#myModal"
                     onclick="">删除
             </button>
             <form action="/SearchContactsServlet" class="navbar-form navbar-right" method="post">
                 <div class="form-group">
-                    <input type="text" name="keyName" class="form-control" placeholder="联系人搜索"/>
+                    <input type="text" name="keyName" class="form-control" value="${param.keyName}" placeholder="联系人搜索"/>
                 </div>
-                <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-search"></span>
+                <button type="submit" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-search"></span>
                 </button>
             </form>
         </div>
@@ -106,10 +106,8 @@
                     <%
                         }
                     %>
-
                 </table>
             </form>
-
         </div>
         <%--</div>--%>
     </div>
@@ -147,7 +145,7 @@
         if (updateMess != null && !updateMess.equals("")) {
 
     %>
-    <h1 class="page-header">${up}</h1>
+    <%--<h1 class="page-header">${up}</h1>--%>
     <script>
         alert("${updateContactMess}");
     </script>

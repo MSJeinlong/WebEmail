@@ -44,27 +44,21 @@
 
             <div id="mynavbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <%--<li class="dropdown">--%>
-                    <%--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"--%>
-                    <%--aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>--%>
-                    <%--账号<span class="caret"></span></a>--%>
-                    <%--<ul class="dropdown-menu">--%>
-                    <%--<li>--%>
-                    <%--<a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> 账号信息</a>--%>
-                    <%--</li>--%>
-
-                    <%--</ul>--%>
-                    <%--</li>--%>
                     <li>
                         <a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 账号: ${username}</a>
                     </li>
                     <li onclick="showUserInfo()">
                         <a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> 账号信息</a>
                     </li>
+                    <li>
+                        <a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 当前邮箱：
+                            ${currEmailAddr}
+                        </a>
+                    </li>
                     <li onclick="addMailBox()">
                         <a href="#"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 绑定新邮箱</a>
                     </li>
-                    <li>
+                    <li onclick="refreshReceivedEmails()">
                         <a href="#"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> 刷新同步</a>
                     </li>
                 </ul>
@@ -73,16 +67,23 @@
                         <a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> 退出</a>
                     </li>
                 </ul>
-                <%--<form class="navbar-form navbar-left">--%>
-                <%--<div class="form-group">--%>
-                <%--<input type="text" class="form-control" placeholder="邮件搜索">--%>
-                <%--</div>--%>
-                <%--<button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-search"></span>--%>
-                <%--</button>--%>
-                <%--</form>--%>
             </div>
         </div>
     </nav>
 </div>
+<%--根据Servlet的处理结果，弹出js提示框--%>
+<%
+    String mess = (String) session.getAttribute("message");
+    if (mess == null || mess.equals("")) {
+        //不做处理
+    } else {%>
+<script type="text/javascript">
+    //alert("<%=mess%>");
+    //登录成功，刷新收件箱
+    refreshReceivedEmails();
+</script>
+<%
+        session.setAttribute("message", "");
+    }%>
 </body>
 </html>

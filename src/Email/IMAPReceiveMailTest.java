@@ -2,12 +2,12 @@ package Email;
 
 
 import com.sun.mail.imap.IMAPMessage;
+import com.sun.mail.imap.IMAPStore;
 
 import javax.mail.Flags.Flag;
 import javax.mail.Folder;
 import javax.mail.Message;
 import javax.mail.Session;
-import javax.mail.Store;
 import javax.mail.internet.MimeUtility;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -32,15 +32,18 @@ public class IMAPReceiveMailTest {
         props.setProperty("mail.store.protocol", "imap");
         props.setProperty("mail.imap.host", "imap.163.com");
         props.setProperty("mail.imap.port", "143");
+        props.setProperty("mail.imap.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+        props.setProperty("mail.imap.socketFactory.fallback", "false");
 
         // 创建Session实例对象
         Session session = Session.getInstance(props);
 
         // 创建IMAP协议的Store对象
-        Store store = session.getStore("imap");
+        IMAPStore store = (IMAPStore)session.getStore("imap");
+        System.setProperty("https.protocols", "TLSv1.2,TLSv1.1,SSLv3");
 
         // 连接邮件服务器
-        store.connect("15917362227@163.com", "En96387125");
+        store.connect("15917362227@163.com", "En9857361");
 
         // 获得收件箱
         Folder folder = store.getFolder("INBOX");

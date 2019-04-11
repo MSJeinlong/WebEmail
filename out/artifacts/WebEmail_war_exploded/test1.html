@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        body{
+            background-color: #1E90FF;
+        }
+    </style>
 </head>
 <body>
-<h1>Test;</h1>
+<form action="/DownloadServlet" method="post">
+    <input type="hidden" value="F:\Study\TestFile\纯文本.txt" name="filePath"/>
+    <input type="submit" class="btn btn-success btn-xs" value="下载附件" />
+</form>
 </body>
 </html>

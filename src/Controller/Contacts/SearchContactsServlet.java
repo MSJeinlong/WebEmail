@@ -5,6 +5,7 @@ import Dao.ContactDAOImpl;
 import bean.Contact;
 import bean.User;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -31,6 +32,7 @@ public class SearchContactsServlet extends HttpServlet {
         List<Contact> contactList = contactDAO.query(contact);
         session.setAttribute("contactList", contactList);
         session.setAttribute("contactNumber",contactList.size());
-        response.sendRedirect("/contacts.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/contacts.jsp");
+        dispatcher.forward(request, response);
     }
 }

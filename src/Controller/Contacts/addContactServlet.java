@@ -42,6 +42,7 @@ public class addContactServlet extends HttpServlet {
             contactList = dao.getAllContacts(u.getUserName());
             session.setAttribute("contactList", contactList);
             session.setAttribute("contactNumber", contactList.size());
+            session.setAttribute("active", 2);
             response.sendRedirect("/contacts.jsp");
         } else {
             session.setAttribute("mess", "联系人添加失败！\n原因：通讯录已存在这条联系人信息");

@@ -41,9 +41,9 @@
             <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal"
                     onclick="">删除
             </button>
-            <form action="#" class="navbar-form navbar-right" method="post">
+            <form action="/SearchEmailServlet" class="navbar-form navbar-right" method="post">
                 <div class="form-group">
-                    <input type="text" name="keyName" class="form-control" placeholder="邮箱搜索"/>
+                    <input type="text" name="keyName" class="form-control" value="${param.keyName}" placeholder="邮箱搜索"/>
                 </div>
                 <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-search"></span>
                 </button>
@@ -159,7 +159,7 @@
 %>
 <script>
     alert("<%=mess4%>");
-    window.parent.document.getElementById("leftFrame").contentWindow.location.reload(true);
+    // window.parent.document.getElementById("leftFrame").contentWindow.location.reload(true);
 </script>
 <%
         session.setAttribute("deleteEmailBoxMess", "");
@@ -171,7 +171,7 @@
         //隐藏Modal
         $("#myModal").modal("hide");
         //执行删除操作
-
+        deleteEmailBox();
     });
 </script>
 </body>

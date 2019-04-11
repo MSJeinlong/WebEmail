@@ -29,6 +29,7 @@ public class GetAllContactsServlet extends HttpServlet {
         ContactDAO dao = new ContactDAOImpl();
         list = dao.getAllContacts(u.getUserName());
         session.setAttribute("contactList", list);
+        session.setAttribute("active", 2);
         //System.out.println("得到所有联系人");
         response.sendRedirect("/contacts.jsp");
     }
