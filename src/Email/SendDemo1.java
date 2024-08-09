@@ -8,10 +8,10 @@ import java.util.Properties;
 
 
 public class SendDemo1 {
-    private String email_from = "15917362227@sina.cn";
-    private String username = "15917362227";
-    private String password = "intel365";
-    private String email_to = "15917362227@163.com";
+    private String email_from = "********@sina.cn";
+    private String username = "********";
+    private String password = "*********";
+    private String email_to = "********@163.com";
     private String SMTPServer = "smtp.sina.cn" ;
 
     public void fun1() {
@@ -55,10 +55,10 @@ public class SendDemo1 {
         Properties props = new Properties();
         props.setProperty("mail.host", "smtp.163.com");
         props.setProperty("mail.smtp.auth", "true");
-        email_from = "15917362227@163.com";
-         username = "15917362227";
-         password = "En9857361";
-        email_to = "2869897445@qq.com";
+        email_from = "*********@163.com";
+         username = "********";
+         password = "********";
+        email_to = "************@qq.com";
 
         Authenticator auth = new Authenticator() {
             @Override
